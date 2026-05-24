@@ -1,0 +1,133 @@
+---
+import Base from "../layouts/Base.astro";
+import FeedCard from "../components/FeedCard.astro";
+import { getCollection } from "astro:content";
+
+const [gaming, events, sports] = await Promise.all([
+  getCollection("gaming"),
+  getCollection("current-events"),
+  getCollection("sports"),
+]);
+
+const sort = (posts: typeof gaming) =>
+  posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const slug = (id: string) => id.replace(/\.md$/, "");
+
+const sortedGaming = sort(gaming);
+const sortedEvents = sort(events);
+const sortedSports = sort(sports);
+
+const feeds = [
+  { id: "gaming", label: "Gaming & Hobbies", posts: sortedGaming },
+  { id: "current-events", label: "Current Events", posts: sortedEvents },
+  { id: "sports", label: "Sports", posts: sortedSports },
+];
+---
+
+<Base title="WHMO">
+  <div class="container">
+    <nav class="tabs" role="tablist" aria-label="Content feeds">
+      <ul class="tabs__list">
+        {feeds.map((feed, i) => (
+          <li class="tabs__item">
+            <button
+              class="tabs__btn"
+              role="tab"
+              data-feed={feed.id}
+              data-active={i === 0 ? "true" : "false"}
+              aria-selected={i === 0 ? "true" : "false"}
+              aria-controls={`panel-${feed.id}`}
+              id={`tab-${feed.id}`}
+            >
+              {feed.label}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    {feeds.map((feed, i) => {
+      const [lead, ...rest] = feed.posts;
+      return (
+        <section
+          class="feed-panel"
+          id={`panel-${feed.id}`}
+          role="tabpanel"
+          aria-labelledby={`tab-${feed.id}`}
+          data-feed={feed.id}
+          data-visible={i === 0 ? "true" : "false"}
+        >
+          {lead && (
+            <div class="article-grid article-grid--lead">
+              <FeedCard
+                title={lead.data.title}
+                description={lead.data.description}
+                date={lead.data.date}
+                author={lead.data.author}
+                slug={slug(lead.id)}
+                collection={feed.id}
+                variant="lead"
+              />
+              {rest[0] && (
+                <FeedCard
+                  title={rest[0].data.title}
+                  description={rest[0].data.description}
+                  date={rest[0].data.date}
+                  author={rest[0].data.author}
+                  slug={slug(rest[0].id)}
+                  collection={feed.id}
+                  variant="secondary"
+                />
+              )}
+            </div>
+          )}
+          {rest.length > 1 && (
+            <div class="article-grid article-grid--secondary">
+              {rest.slice(1).map((post) => (
+                <FeedCard
+                  title={post.data.title}
+                  description={post.data.description}
+                  date={post.data.date}
+                  author={post.data.author}
+                  slug={slug(post.id)}
+                  collection={feed.id}
+                  variant="secondary"
+                />
+              ))}
+            </div>
+          )}
+        </section>
+      );
+    })}
+  </div>
+</Base>
+
+<script>
+  const tabs = document.querySelectorAll<HTMLButtonElement>(".tabs__btn");
+  const panels = document.querySelectorAll<HTMLElement>(".feed-panel");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.dataset.feed;
+
+      tabs.forEach((t) => {
+        t.dataset.active = t.dataset.feed === target ? "true" : "false";
+        t.ariaSelected = t.dataset.feed === target ? "true" : "false";
+      });
+
+      panels.forEach((panel) => {
+        panel.dataset.visible = panel.dataset.feed === target ? "true" : "false";
+      });
+
+      if (history.replaceState) {
+        history.replaceState(null, "", `#${target}`);
+      }
+    });
+  });
+
+  const hash = location.hash.slice(1);
+  if (hash && document.querySelector(`[data-feed="${hash}"]`)) {
+    document.querySelector<HTMLButtonElement>(`[data-feed="${hash}"].tabs__btn`)?.click();
+  }
+</script>

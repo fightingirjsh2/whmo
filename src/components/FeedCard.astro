@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  author: string;
+  slug: string;
+  collection: string;
+  variant?: "lead" | "secondary";
+}
+
+const { title, description, date, author, slug, collection, variant = "secondary" } = Astro.props;
+
+const labels: Record<string, string> = {
+  gaming: "Gaming",
+  "current-events": "Current Events",
+  sports: "Sports",
+};
+
+const dateStr = date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+---
+
+<article class={`card card--${variant}`}>
+  <p class="kicker card__kicker">{labels[collection]}</p>
+  <h2 class="card__title">
+    <a href={`/${collection}/${slug}`}>{title}</a>
+  </h2>
+  <p class="card__desc">{description}</p>
+  <p class="card__meta">{author} &middot; {dateStr}</p>
+</article>

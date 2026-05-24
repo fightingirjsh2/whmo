@@ -1,0 +1,56 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Editorial coverage of gaming, current events, and sports." } = Astro.props;
+const siteName = "Wait, Hear Me Out...";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title === siteName ? siteName : `${title} — ${siteName}`}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script is:inline>
+      // Set theme before first paint to avoid flash
+      const stored = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = stored ?? (prefersDark ? "dark" : "light");
+    </script>
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead__inner">
+          <h1 class="masthead__title"><a href="/">Wait, Hear Me Out...</a></h1>
+          <div class="masthead__right">
+            <span class="masthead__date">{new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <span class="theme-toggle__icon theme-toggle__icon--light">&#9788;</span>
+              <span class="theme-toggle__icon theme-toggle__icon--dark">&#9790;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <script>
+      const btn = document.getElementById("theme-toggle")!;
+      btn.addEventListener("click", () => {
+        const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem("theme", next);
+      });
+    </script>
+  </body>
+</html>
