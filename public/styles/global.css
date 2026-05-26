@@ -162,6 +162,43 @@ h1, h2, h3, h4 {
 [data-theme="dark"] .theme-toggle__icon--light { display: block; }
 [data-theme="dark"] .theme-toggle__icon--dark  { display: none; }
 
+/* Persistent feed nav (shown on all non-splash pages) */
+.feed-nav {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.feed-nav__list {
+  display: flex;
+  list-style: none;
+  gap: 0;
+}
+
+.feed-nav__link {
+  display: block;
+  padding: 0.875rem 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 3px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.feed-nav__link:hover { color: var(--ink); }
+
+.feed-nav__link[data-active="true"] { color: var(--ink); }
+.feed-nav__link[data-active="true"][data-feed="gaming"] { border-color: var(--gaming); }
+.feed-nav__link[data-active="true"][data-feed="current-events"] { border-color: var(--events); }
+.feed-nav__link[data-active="true"][data-feed="sports"] { border-color: var(--sports); }
+
 /* Splash / welcome page */
 .splash {
   display: grid;
@@ -172,8 +209,8 @@ h1, h2, h3, h4 {
 .splash__section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 2.5rem 2rem 3rem;
+  justify-content: center;
+  padding: 2.5rem 2rem;
   border-right: 1px solid var(--rule);
   border-top: 4px solid transparent;
   text-decoration: none;

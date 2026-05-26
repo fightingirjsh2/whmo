@@ -16,9 +16,18 @@ const {
 const siteName = "Wait, Hear Me Out...";
 const pageTitle = title === siteName ? siteName : `${title} — ${siteName}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
-const ogImageUrl = ogImage
-  ? new URL(ogImage, Astro.site).href
-  : null;
+const ogImageUrl = ogImage ? new URL(ogImage, Astro.site).href : null;
+
+const pathname = Astro.url.pathname;
+const showFeedNav = pathname !== "/";
+
+const feeds = [
+  { id: "gaming", label: "Gaming & Hobbies", href: "/gaming" },
+  { id: "current-events", label: "Current Events", href: "/current-events" },
+  { id: "sports", label: "Sports", href: "/sports" },
+];
+
+const activeFeed = feeds.find((f) => pathname.startsWith(f.href))?.id ?? null;
 ---
 
 <!doctype html>
@@ -69,6 +78,29 @@ const ogImageUrl = ogImage
         </div>
       </div>
     </header>
+
+    {showFeedNav && (
+      <nav class="feed-nav" aria-label="Content feeds">
+        <div class="container">
+          <ul class="feed-nav__list">
+            {feeds.map((feed) => (
+              <li>
+                <a
+                  class="feed-nav__link"
+                  href={feed.href}
+                  data-feed={feed.id}
+                  data-active={feed.id === activeFeed ? "true" : "false"}
+                  aria-current={feed.id === activeFeed ? "page" : undefined}
+                >
+                  {feed.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+    )}
+
     <main>
       <slot />
     </main>
