@@ -97,6 +97,9 @@ const feeds = [
               ))}
             </div>
           )}
+          <div class="feed-panel__footer">
+            <a class="view-all" href={`/${feed.id}`}>All {feed.label} articles &#8594;</a>
+          </div>
         </section>
       );
     })}

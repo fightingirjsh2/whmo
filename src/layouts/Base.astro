@@ -2,10 +2,23 @@
 interface Props {
   title: string;
   description?: string;
+  ogImage?: string;
+  ogType?: "website" | "article";
 }
 
-const { title, description = "Editorial coverage of gaming, current events, and sports." } = Astro.props;
+const {
+  title,
+  description = "Editorial coverage of gaming, current events, and sports.",
+  ogImage,
+  ogType = "website",
+} = Astro.props;
+
 const siteName = "Wait, Hear Me Out...";
+const pageTitle = title === siteName ? siteName : `${title} — ${siteName}`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const ogImageUrl = ogImage
+  ? new URL(ogImage, Astro.site).href
+  : null;
 ---
 
 <!doctype html>
@@ -14,13 +27,28 @@ const siteName = "Wait, Hear Me Out...";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <title>{title === siteName ? siteName : `${title} — ${siteName}`}</title>
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content={ogImageUrl ? "summary_large_image" : "summary"} />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
+
+    <title>{pageTitle}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/styles/global.css" />
     <script is:inline>
-      // Set theme before first paint to avoid flash
       const stored = localStorage.getItem("theme");
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       document.documentElement.dataset.theme = stored ?? (prefersDark ? "dark" : "light");

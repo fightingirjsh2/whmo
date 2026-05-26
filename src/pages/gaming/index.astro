@@ -1,0 +1,35 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("gaming")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<Base title="Gaming & Hobbies" description="All gaming and hobby coverage from Wait, Hear Me Out...">
+  <div class="container">
+    <div class="feed-index">
+      <div class="feed-index__header">
+        <a class="back-link" href="/#gaming">&#8592; Home</a>
+        <h1 class="feed-index__title" style="color: var(--gaming)">Gaming & Hobbies</h1>
+        <p class="feed-index__count">{posts.length} {posts.length === 1 ? "article" : "articles"}</p>
+      </div>
+      <ol class="post-list">
+        {posts.map((post) => {
+          const slug = post.id.replace(/\.md$/, "");
+          const dateStr = post.data.date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+          return (
+            <li class="post-list__item">
+              <a class="post-list__link" href={`/gaming/${slug}`}>
+                <span class="post-list__title">{post.data.title}</span>
+                <span class="post-list__meta">{post.data.author} &middot; {dateStr}</span>
+                <span class="post-list__desc">{post.data.description}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  </div>
+</Base>

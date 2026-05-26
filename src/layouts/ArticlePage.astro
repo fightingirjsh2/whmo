@@ -17,7 +17,7 @@ const { title, description, date, author, image, backHref, backLabel, accentVar,
 const dateStr = date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} ogImage={image} ogType="article">
   {image && (
     <div class="article-hero">
       <img src={image} alt="" class="article-hero__img" />
