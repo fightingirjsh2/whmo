@@ -8,8 +8,8 @@ const [gaming, events, sports] = await Promise.all([
   getCollection("sports"),
 ]);
 
-const latest = (posts: typeof gaming) =>
-  posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())[0];
+const recents = (posts: typeof gaming, n = 3) =>
+  [...posts].sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, n);
 
 const feeds = [
   {
@@ -17,7 +17,7 @@ const feeds = [
     label: "Gaming\n& Hobbies",
     href: "/gaming",
     accentVar: "--gaming",
-    latest: latest(gaming),
+    recents: recents(gaming),
     count: gaming.length,
     tagline: "Reviews, previews, and takes on games and the hobby space.",
   },
@@ -26,7 +26,7 @@ const feeds = [
     label: "Current\nEvents",
     href: "/current-events",
     accentVar: "--events",
-    latest: latest(events),
+    recents: recents(events),
     count: events.length,
     tagline: "News, policy, and the stories worth slowing down for.",
   },
@@ -35,7 +35,7 @@ const feeds = [
     label: "Sports",
     href: "/sports",
     accentVar: "--sports",
-    latest: latest(sports),
+    recents: recents(sports),
     count: sports.length,
     tagline: "Games, numbers, and what they actually mean.",
   },
@@ -44,24 +44,31 @@ const feeds = [
 
 <Base title="Wait, Hear Me Out...">
   <div class="splash">
-    {feeds.map((feed) => {
-      const slug = feed.latest?.id.replace(/\.md$/, "");
-      return (
-        <a class="splash__section" href={feed.href} data-feed={feed.id} style={`--accent: var(${feed.accentVar})`}>
-          <div class="splash__inner">
-            <p class="splash__count kicker">{feed.count} {feed.count === 1 ? "article" : "articles"}</p>
-            <h2 class="splash__title">{feed.label}</h2>
-            <p class="splash__tagline">{feed.tagline}</p>
-            {feed.latest && (
-              <p class="splash__latest">
-                <span class="splash__latest-label">Latest</span>
-                {feed.latest.data.title}
-              </p>
-            )}
-            <span class="splash__cta">Read all &#8594;</span>
-          </div>
-        </a>
-      );
-    })}
+    {feeds.map((feed) => (
+      <div class="splash__section" data-feed={feed.id} style={`--accent: var(${feed.accentVar})`}>
+        <div class="splash__inner">
+          <p class="splash__count kicker">{feed.count} {feed.count === 1 ? "article" : "articles"}</p>
+          <h2 class="splash__title">
+            <a class="splash__title-link" href={feed.href}>{feed.label}</a>
+          </h2>
+          <p class="splash__tagline">{feed.tagline}</p>
+          {feed.recents.length > 0 && (
+            <ul class="splash__articles">
+              {feed.recents.map((article) => {
+                const slug = article.id.replace(/\.md$/, "");
+                return (
+                  <li>
+                    <a class="splash__article-link" href={`${feed.href}/${slug}`}>
+                      {article.data.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+          <a class="splash__cta" href={feed.href}>Read all &#8594;</a>
+        </div>
+      </div>
+    ))}
   </div>
 </Base>

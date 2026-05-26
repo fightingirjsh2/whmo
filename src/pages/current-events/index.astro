@@ -1,35 +1,58 @@
 ---
 import Base from "../../layouts/Base.astro";
+import FeedCard from "../../components/FeedCard.astro";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("current-events")).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
+
+const slug = (id: string) => id.replace(/\.md$/, "");
+const [lead, second, ...rest] = posts;
 ---
 
 <Base title="Current Events" description="All current events coverage from Wait, Hear Me Out...">
   <div class="container">
-    <div class="feed-index">
-      <div class="feed-index__header">
-        <a class="back-link" href="/#current-events">&#8592; Home</a>
-        <h1 class="feed-index__title" style="color: var(--events)">Current Events</h1>
-        <p class="feed-index__count">{posts.length} {posts.length === 1 ? "article" : "articles"}</p>
-      </div>
-      <ol class="post-list">
-        {posts.map((post) => {
-          const slug = post.id.replace(/\.md$/, "");
-          const dateStr = post.data.date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-          return (
-            <li class="post-list__item">
-              <a class="post-list__link" href={`/current-events/${slug}`}>
-                <span class="post-list__title">{post.data.title}</span>
-                <span class="post-list__meta">{post.data.author} &middot; {dateStr}</span>
-                <span class="post-list__desc">{post.data.description}</span>
-              </a>
-            </li>
-          );
-        })}
-      </ol>
-    </div>
+    <section data-feed="current-events">
+      {lead && (
+        <div class="article-grid article-grid--lead">
+          <FeedCard
+            title={lead.data.title}
+            description={lead.data.description}
+            date={lead.data.date}
+            author={lead.data.author}
+            slug={slug(lead.id)}
+            collection="current-events"
+            variant="lead"
+          />
+          {second && (
+            <FeedCard
+              title={second.data.title}
+              description={second.data.description}
+              date={second.data.date}
+              author={second.data.author}
+              slug={slug(second.id)}
+              collection="current-events"
+              variant="secondary"
+            />
+          )}
+        </div>
+      )}
+      {rest.length > 0 && (
+        <div class="article-grid article-grid--secondary">
+          {rest.map((post) => (
+            <FeedCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.date}
+              author={post.data.author}
+              slug={slug(post.id)}
+              collection="current-events"
+              variant="secondary"
+            />
+          ))}
+        </div>
+      )}
+    </section>
   </div>
 </Base>
