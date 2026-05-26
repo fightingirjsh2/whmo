@@ -1,6 +1,5 @@
 ---
 import Base from "../layouts/Base.astro";
-import FeedCard from "../components/FeedCard.astro";
 import { getCollection } from "astro:content";
 
 const [gaming, events, sports] = await Promise.all([
@@ -9,128 +8,60 @@ const [gaming, events, sports] = await Promise.all([
   getCollection("sports"),
 ]);
 
-const sort = (posts: typeof gaming) =>
-  posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-
-const slug = (id: string) => id.replace(/\.md$/, "");
-
-const sortedGaming = sort(gaming);
-const sortedEvents = sort(events);
-const sortedSports = sort(sports);
+const latest = (posts: typeof gaming) =>
+  posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime())[0];
 
 const feeds = [
-  { id: "gaming", label: "Gaming & Hobbies", posts: sortedGaming },
-  { id: "current-events", label: "Current Events", posts: sortedEvents },
-  { id: "sports", label: "Sports", posts: sortedSports },
+  {
+    id: "gaming",
+    label: "Gaming\n& Hobbies",
+    href: "/gaming",
+    accentVar: "--gaming",
+    latest: latest(gaming),
+    count: gaming.length,
+    tagline: "Reviews, previews, and takes on games and the hobby space.",
+  },
+  {
+    id: "current-events",
+    label: "Current\nEvents",
+    href: "/current-events",
+    accentVar: "--events",
+    latest: latest(events),
+    count: events.length,
+    tagline: "News, policy, and the stories worth slowing down for.",
+  },
+  {
+    id: "sports",
+    label: "Sports",
+    href: "/sports",
+    accentVar: "--sports",
+    latest: latest(sports),
+    count: sports.length,
+    tagline: "Games, numbers, and what they actually mean.",
+  },
 ];
 ---
 
-<Base title="WHMO">
-  <div class="container">
-    <nav class="tabs" role="tablist" aria-label="Content feeds">
-      <ul class="tabs__list">
-        {feeds.map((feed, i) => (
-          <li class="tabs__item">
-            <button
-              class="tabs__btn"
-              role="tab"
-              data-feed={feed.id}
-              data-active={i === 0 ? "true" : "false"}
-              aria-selected={i === 0 ? "true" : "false"}
-              aria-controls={`panel-${feed.id}`}
-              id={`tab-${feed.id}`}
-            >
-              {feed.label}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
-
-    {feeds.map((feed, i) => {
-      const [lead, ...rest] = feed.posts;
+<Base title="Wait, Hear Me Out...">
+  <div class="splash">
+    {feeds.map((feed) => {
+      const slug = feed.latest?.id.replace(/\.md$/, "");
       return (
-        <section
-          class="feed-panel"
-          id={`panel-${feed.id}`}
-          role="tabpanel"
-          aria-labelledby={`tab-${feed.id}`}
-          data-feed={feed.id}
-          data-visible={i === 0 ? "true" : "false"}
-        >
-          {lead && (
-            <div class="article-grid article-grid--lead">
-              <FeedCard
-                title={lead.data.title}
-                description={lead.data.description}
-                date={lead.data.date}
-                author={lead.data.author}
-                slug={slug(lead.id)}
-                collection={feed.id}
-                variant="lead"
-              />
-              {rest[0] && (
-                <FeedCard
-                  title={rest[0].data.title}
-                  description={rest[0].data.description}
-                  date={rest[0].data.date}
-                  author={rest[0].data.author}
-                  slug={slug(rest[0].id)}
-                  collection={feed.id}
-                  variant="secondary"
-                />
-              )}
-            </div>
-          )}
-          {rest.length > 1 && (
-            <div class="article-grid article-grid--secondary">
-              {rest.slice(1).map((post) => (
-                <FeedCard
-                  title={post.data.title}
-                  description={post.data.description}
-                  date={post.data.date}
-                  author={post.data.author}
-                  slug={slug(post.id)}
-                  collection={feed.id}
-                  variant="secondary"
-                />
-              ))}
-            </div>
-          )}
-          <div class="feed-panel__footer">
-            <a class="view-all" href={`/${feed.id}`}>All {feed.label} articles &#8594;</a>
+        <a class="splash__section" href={feed.href} data-feed={feed.id} style={`--accent: var(${feed.accentVar})`}>
+          <div class="splash__inner">
+            <p class="splash__count kicker">{feed.count} {feed.count === 1 ? "article" : "articles"}</p>
+            <h2 class="splash__title">{feed.label}</h2>
+            <p class="splash__tagline">{feed.tagline}</p>
+            {feed.latest && (
+              <p class="splash__latest">
+                <span class="splash__latest-label">Latest</span>
+                {feed.latest.data.title}
+              </p>
+            )}
+            <span class="splash__cta">Read all &#8594;</span>
           </div>
-        </section>
+        </a>
       );
     })}
   </div>
 </Base>
-
-<script>
-  const tabs = document.querySelectorAll<HTMLButtonElement>(".tabs__btn");
-  const panels = document.querySelectorAll<HTMLElement>(".feed-panel");
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const target = tab.dataset.feed;
-
-      tabs.forEach((t) => {
-        t.dataset.active = t.dataset.feed === target ? "true" : "false";
-        t.ariaSelected = t.dataset.feed === target ? "true" : "false";
-      });
-
-      panels.forEach((panel) => {
-        panel.dataset.visible = panel.dataset.feed === target ? "true" : "false";
-      });
-
-      if (history.replaceState) {
-        history.replaceState(null, "", `#${target}`);
-      }
-    });
-  });
-
-  const hash = location.hash.slice(1);
-  if (hash && document.querySelector(`[data-feed="${hash}"]`)) {
-    document.querySelector<HTMLButtonElement>(`[data-feed="${hash}"].tabs__btn`)?.click();
-  }
-</script>
