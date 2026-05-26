@@ -1,5 +1,7 @@
 ---
 import Base from "./Base.astro";
+import TagList from "../components/TagList.astro";
+import RelatedPosts from "../components/RelatedPosts.astro";
 
 interface Props {
   title: string;
@@ -7,13 +9,16 @@ interface Props {
   date: Date;
   author: string;
   image?: string;
+  tags: string[];
+  currentId: string;
+  collection: "gaming" | "current-events" | "sports";
   backHref: string;
   backLabel: string;
   accentVar: string;
   feedLabel: string;
 }
 
-const { title, description, date, author, image, backHref, backLabel, accentVar, feedLabel } = Astro.props;
+const { title, description, date, author, image, tags, currentId, collection, backHref, backLabel, accentVar, feedLabel } = Astro.props;
 const dateStr = date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 ---
 
@@ -32,6 +37,19 @@ const dateStr = date.toLocaleDateString("en-US", { month: "long", day: "numeric"
       <div class="article__body">
         <slot />
       </div>
+      {tags.length > 0 && (
+        <footer class="article__footer">
+          <TagList tags={tags} />
+        </footer>
+      )}
     </article>
+    <RelatedPosts
+      currentId={currentId}
+      tags={tags}
+      collection={collection}
+      accentVar={accentVar}
+      feedLabel={feedLabel}
+      backHref={backHref}
+    />
   </div>
 </Base>

@@ -1,0 +1,18 @@
+---
+interface Props {
+  tags: string[];
+}
+
+const { tags } = Astro.props;
+const normalize = (t: string) => t.toLowerCase().replace(/\s+/g, "-");
+---
+
+{tags.length > 0 && (
+  <ul class="tag-list">
+    {tags.map((tag) => (
+      <li>
+        <a class="tag" href={`/tags/${normalize(tag)}`}>{tag}</a>
+      </li>
+    ))}
+  </ul>
+)}

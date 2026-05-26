@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+
+interface Props {
+  currentId: string;
+  tags: string[];
+  collection: "gaming" | "current-events" | "sports";
+  accentVar: string;
+  feedLabel: string;
+  backHref: string;
+}
+
+const { currentId, tags, collection, accentVar, feedLabel, backHref } = Astro.props;
+
+const normalizedTags = tags.map((t) => t.toLowerCase());
+const allPosts = await getCollection(collection);
+const others = allPosts
+  .filter((p) => p.id !== currentId)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const withSharedTags = others.filter((p) =>
+  p.data.tags.some((t) => normalizedTags.includes(t.toLowerCase()))
+);
+const withoutSharedTags = others.filter((p) =>
+  !withSharedTags.includes(p)
+);
+
+const related = [...withSharedTags, ...withoutSharedTags].slice(0, 3);
+
+const slug = (id: string) => id.replace(/\.md$/, "");
+---
+
+{related.length > 0 && (
+  <aside class="related">
+    <h2 class="related__heading">More in <a href={backHref} style={`color: var(${accentVar})`}>{feedLabel}</a></h2>
+    <ul class="related__list">
+      {related.map((post) => {
+        const dateStr = post.data.date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+        return (
+          <li class="related__item">
+            <a class="related__link" href={`/${collection}/${slug(post.id)}`}>
+              <span class="related__title">{post.data.title}</span>
+              <span class="related__meta">{dateStr}</span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  </aside>
+)}

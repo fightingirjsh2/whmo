@@ -1,0 +1,85 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const [gaming, events, sports] = await Promise.all([
+    getCollection("gaming"),
+    getCollection("current-events"),
+    getCollection("sports"),
+  ]);
+
+  const allPosts = [
+    ...gaming.map((p) => ({ ...p, collection: "gaming" as const })),
+    ...events.map((p) => ({ ...p, collection: "current-events" as const })),
+    ...sports.map((p) => ({ ...p, collection: "sports" as const })),
+  ];
+
+  const normalize = (t: string) => t.toLowerCase().replace(/\s+/g, "-");
+  const tagMap = new Map<string, typeof allPosts>();
+
+  for (const post of allPosts) {
+    for (const tag of post.data.tags) {
+      const key = normalize(tag);
+      if (!tagMap.has(key)) tagMap.set(key, []);
+      tagMap.get(key)!.push(post);
+    }
+  }
+
+  return [...tagMap.entries()].map(([tag, posts]) => ({
+    params: { tag },
+    props: {
+      tag,
+      // Use the display casing from the first occurrence
+      displayTag: posts[0].data.tags.find(
+        (t) => normalize(t) === tag
+      ) ?? tag,
+      posts: posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
+    },
+  }));
+}
+
+const { tag, displayTag, posts } = Astro.props;
+
+const collectionLabels: Record<string, string> = {
+  gaming: "Gaming & Hobbies",
+  "current-events": "Current Events",
+  sports: "Sports",
+};
+
+const collectionAccent: Record<string, string> = {
+  gaming: "var(--gaming)",
+  "current-events": "var(--events)",
+  sports: "var(--sports)",
+};
+---
+
+<Base title={`#${displayTag}`} description={`All articles tagged "${displayTag}" on Wait, Hear Me Out...`}>
+  <div class="container">
+    <div class="feed-index">
+      <div class="feed-index__header">
+        <a class="back-link" href="/">&#8592; Home</a>
+        <h1 class="feed-index__title">#{displayTag}</h1>
+        <p class="feed-index__count">{posts.length} {posts.length === 1 ? "article" : "articles"}</p>
+      </div>
+      <ol class="post-list">
+        {posts.map((post) => {
+          const slug = post.id.replace(/\.md$/, "");
+          const dateStr = post.data.date.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+          return (
+            <li class="post-list__item">
+              <a class="post-list__link" href={`/${post.collection}/${slug}`}>
+                <span class="post-list__label" style={`color: ${collectionAccent[post.collection]}`}>
+                  {collectionLabels[post.collection]}
+                </span>
+                <span class="post-list__title">{post.data.title}</span>
+                <span class="post-list__meta">{post.data.author} &middot; {dateStr}</span>
+                <span class="post-list__desc">{post.data.description}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  </div>
+</Base>
