@@ -8,6 +8,7 @@ const postSchema = z.object({
   author: z.string().default("Editorial"),
   image: z.string().optional(),
   tags: z.array(z.string()).default([]),
+  draft: z.boolean().optional().default(false),
 });
 
 export const collections = {

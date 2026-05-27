@@ -3,9 +3,9 @@ import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
 const [gaming, events, sports] = await Promise.all([
-  getCollection("gaming"),
-  getCollection("current-events"),
-  getCollection("sports"),
+  getCollection("gaming", ({ data }) => !data.draft),
+  getCollection("current-events", ({ data }) => !data.draft),
+  getCollection("sports", ({ data }) => !data.draft),
 ]);
 
 const recents = (posts: typeof gaming, n = 3) =>

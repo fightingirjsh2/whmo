@@ -3,7 +3,7 @@ import Base from "../../layouts/Base.astro";
 import FeedCard from "../../components/FeedCard.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("gaming")).sort(
+const posts = (await getCollection("gaming", ({ data }) => !data.draft)).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
 

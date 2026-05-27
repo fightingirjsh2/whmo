@@ -1,9 +1,13 @@
 ---
-title: "The Summer 2026 Games We're Actually Watching"
-description: "Past the marketing noise, these are the five releases worth tracking before fall's deluge begins."
+title: The Summer 2026 Games We're Actually Watching
+description: Past the marketing noise, these are the five releases worth tracking before fall's deluge begins.
 date: 2026-05-22
-author: "Connor"
-tags: ["preview", "pc", "console"]
+author: Connor
+tags:
+  - preview
+  - pc
+  - console
+draft: true
 ---
 
 Summer is traditionally a graveyard. Publishers know it, players know it. But some years the calendar surprises you, and 2026 is shaping up to be one of those years.

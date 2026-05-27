@@ -1,9 +1,13 @@
 ---
-title: "Shadow of the Erdtree Is the DLC FromSoftware Always Promised"
-description: "Elden Ring's expansion doubles down on everything that made the base game great — and then some."
+title: Shadow of the Erdtree Is the DLC FromSoftware Always Promised
+description: Elden Ring's expansion doubles down on everything that made the base game great — and then some.
 date: 2026-05-20
-author: "Connor"
-tags: ["fromsoft", "rpg", "review"]
+author: Connor
+tags:
+  - fromsoft
+  - rpg
+  - review
+draft: true
 ---
 
 The first hour of Shadow of the Erdtree tells you everything. A fog wall drops, a boss walks in, and it hits you twice while you're still figuring out where the camera went.

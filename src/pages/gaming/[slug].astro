@@ -3,7 +3,7 @@ import ArticlePage from "../../layouts/ArticlePage.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("gaming");
+  const posts = await getCollection("gaming", ({ data }) => !data.draft);
   return posts.map((post) => ({
     params: { slug: post.id.replace(/\.md$/, "") },
     props: { post },
