@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "we-want-destiny3-or-save-destiny2.md",
+                "file": "Why Bungie Is Ending Destiny 2 Updates.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "we-want-destiny3-or-save-destiny2"
+              "title": "Why Bungie Is Ending Destiny 2 Updates"
+            }
+          },
+          {
+            "id": "7b90e37debe9ca7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Why Bungie Is Ending Destiny 2 Updates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Why Bungie Is Ending Destiny 2 Updates"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "we-want-destiny3-or-save-destiny2.md",
+                "file": "Why Bungie Is Ending Destiny 2 Updates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for we-want-destiny3-or-save-destiny2"
+              "title": "Backlinks for Why Bungie Is Ending Destiny 2 Updates"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "we-want-destiny3-or-save-destiny2.md",
+                "file": "Why Bungie Is Ending Destiny 2 Updates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from we-want-destiny3-or-save-destiny2"
+              "title": "Outgoing links from Why Bungie Is Ending Destiny 2 Updates"
             }
           },
           {
@@ -156,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "we-want-destiny3-or-save-destiny2.md",
+                "file": "Why Bungie Is Ending Destiny 2 Updates.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of we-want-destiny3-or-save-destiny2"
+              "title": "Outline of Why Bungie Is Ending Destiny 2 Updates"
             }
           }
         ]
@@ -183,6 +198,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "b82f06be87091145",
-  "lastOpenFiles": []
+  "active": "7b90e37debe9ca7f",
+  "lastOpenFiles": [
+    "we-want-destiny3-or-save-destiny2 1.md",
+    "Why Bungie Is Ending Destiny 2 Updates.md",
+    "Untitled.md"
+  ]
 }
