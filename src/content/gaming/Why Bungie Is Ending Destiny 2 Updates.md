@@ -21,6 +21,7 @@ While attractive on paper, in practice these first outings in the new structure 
 
 Aside from these expansions content being flawed, it was the core system overhauls that truly turned players away from the game. The Edge of Fate update brought with it a renewed focus on grinding power levels and gear through the portal, a dull interface that replaced the beloved and flavor-filled Director that we played through over the years. By redirecting the player experience into the portal the developers removed some of the mystique and organic world building that made Destiny feel like Destiny, asking players instead to choose tiles off of a boring UI full of old well-trodden activities. I say full, but unfortunately the portal was hardly half full, offering a small selection of the many of the activities already in the game, let alone those that had previously been removed from the seasonal resets and vaulted content.
 
+![The Portal in its original flawed state as found in The Edge of Fate](/public/images/original_portal.jpeg)
 I may explore the pro's and con's of the portal system in another article (because I do believe there were pro's, but I believe the most offensive part of the portal was that rather than offer a method for players to engage with older content as they please, it demanded that they do so almost exclusively. Aside from the main campaign content of the Edge of Fate, it was the main method of leveling for those early months, forcing players to grind away at boring, repetitive activities rather than remain engaged with new content.
 
 Aside from the portal interface being a downgrade, Bungie also put forth a steeper power and loot grind, resetting our power and demanding us climb to 450 (then 550 with the Ash and Iron Update in September), with the main way of doing so being to grind activities in the portal. To make matters worse, the new tiered loot system would doll out low-tiered gear while grinding with higher tiered and more desirable gear only being available in the higher levels, after many many hours of grinding monotonous activities in the portal. And remember, these activities were many of the same strikes and missions we had been playing for years.
@@ -31,13 +32,13 @@ My point in retreading this old ground is to paint a picture of how a game that 
 
 Earlier I commented that I thought the Fate Saga and Destiny 2 as a whole would have a longer runway in this new era, and I stand by that. Similar to the process the MCU has struggled with after Endgame, slowly rebuilding interest in a new saga, and repairing a poor start one high quality release at a time could allow Destiny to organically flourish into another golden age. But that slow rebuild would require commitment and patience on the part of Bungie and perhaps more importantly Sony. 
 
-Unfortunately I think the perfect conflux of events occured to force Sony/Bungie's hand. 
-	-The poor reception to the overhaul of core, hard to repair game systems
-	-The natural downturn in player interest after The Final Shape
-	-Disillusionment with Bungie partnering with Star Wars rather than treading their own original Destiny Path
-	-The high cost associated with managing two live service games (Destiny and Marathon)
-	-The middling performance of Marathon (relative to expectations within Sony)
-	-Sony's desire to stop some bleeding after buying Bungie for $3.6 billion dollars to assist with their doomed push for live service games across multiple studios
+Unfortunately I think the perfect conflux of events occured to force Sony/Bungie's hand.  
+	- The poor reception to the overhaul of core, hard to repair game systems
+	- The natural downturn in player interest after The Final Shape
+	- Disillusionment with Bungie partnering with Star Wars rather than treading their own original Destiny Path
+	- The high cost associated with managing two live service games (Destiny and Marathon)
+	- The middling performance of Marathon (relative to expectations within Sony)
+	- Sony's desire to stop some bleeding after buying Bungie for $3.6 billion dollars to assist with their doomed push for live service games across multiple studios
 
 Between Destiny's lull in player support and community sentiment, and Marathon's player counts being even lower than Destiny's, I can see how Sony and/or Bungie reached an inflection point. The decision to throw all of Bungie's weight behind one of these games, while having a small team incubating Bungie's next thing (assuming they make it that far), is logically sound even if it must've felt like an impossible decision. While I don't necessarily think they bet on the right horse, I can understand the decision to throw their weight behind a fresh game with room to grow, be light of its feet, and adjust to player feedback without the technical and sentimental baggage that comes with a game as rich and dense as Destiny. 
 
