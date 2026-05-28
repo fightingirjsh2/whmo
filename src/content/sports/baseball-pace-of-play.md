@@ -4,6 +4,7 @@ description: "The pace rules were supposed to be cosmetic. They weren't."
 date: 2026-05-18
 author: "Connor"
 tags: ["mlb", "baseball", "rules"]
+draft: true
 ---
 
 The argument against the pitch clock, before it was implemented, was that it would address a symptom while leaving the underlying cause untouched. Games were long because of the number of pitching changes, not because pitchers were standing on the mound thinking. Speeding up the between-pitch interval wouldn't matter.

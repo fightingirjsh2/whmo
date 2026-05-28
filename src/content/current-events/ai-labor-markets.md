@@ -4,6 +4,7 @@ description: "The headline figures look fine. The sectoral breakdown is more com
 date: 2026-05-19
 author: "Connor"
 tags: ["ai", "economics", "labor"]
+draft: true
 ---
 
 Overall employment is holding steady, and technology optimists are pointing to it as evidence that fears about automation were overblown. The aggregate number does not tell you what is happening inside it.

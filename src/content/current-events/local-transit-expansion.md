@@ -4,6 +4,7 @@ description: "Most infrastructure proposals collapse under their own ambition. T
 date: 2026-05-21
 author: "Connor"
 tags: ["urban", "transit", "policy"]
+draft: true
 ---
 
 Ambitious transit plans are easy to announce and hard to fund. The proposal that cleared committee last week has survived more scrutiny than most, and the specifics hold up in ways worth examining.

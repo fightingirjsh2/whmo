@@ -4,6 +4,7 @@ description: "The narratives are set. The numbers complicate a few of them."
 date: 2026-05-23
 author: "Connor"
 tags: ["nba", "playoffs", "analytics"]
+draft: true
 ---
 
 Every conference finals generates a set of narratives that calcify by tip-off and then get carried through the series regardless of what actually happens on the court. This year's matchups are no exception. Let's look at what the numbers say before those narratives fully harden.
