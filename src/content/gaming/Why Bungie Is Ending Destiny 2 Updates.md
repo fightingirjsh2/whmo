@@ -3,7 +3,7 @@ title: Why Bungie Is Ending Destiny 2 Updates
 description: After almost 9 years of updates, Bungie has decided to move on from their aging yet beloved shooter.
 date: 2026-05-23
 author: C.M.
-image: /images/renegades_keyart.jpeg
+image: /images/Marathon_Standard_Keyart_16x9_EN.jpeg
 tags:
   - Destiny
   - News
@@ -14,6 +14,8 @@ On Thursday, May 21, 2026 Bungie announced that they will deliver their final li
 While some were expecting such a move after almost two years of steadily decreasing player counts, I can't help but be shocked that a game that set its peak concurrent player counts on steam after 2023's Lightfall, and nearly matched it with 2024's The Final Shape, didn't have a longer runway before this decision was made. It should not have come as a surprise that player counts would be suppressed after the climactic confrontation with the witness served as the culmination of ten years of the Destiny franchise, but it seems as if Bungie was not prepared for how severe the drop off would be. We'll come back to that in a moment.
 
 After The Final Shape, Bungie announced a new saga of Destiny 2, The Fate Saga, which promised to be a rebirth of Destiny for years to come. The Fate Saga was to bring with it atleast 4 expansions, starting with already released The Edge of Fate and Renegades, followed by the not-yet-release Shattered Cycle followed by The Alchemist. These 4 moderately sized expansions would kick off this new life for Destiny by following a new release cadence, replacing the stale Expansion + 4 seasons structure with a new focus on 2 "Rise of Iron" sized expansions per year with smaller "season-lite" major updates in between. 
+
+![The Year of Prophecy Roadmap](/images/d2_YearofProphecy_Roadmap_EN.jpg)
 
 I personally was a fan of this new structure because it sought to bring more lasting changes to the core game in the form of system overhauls and permanent content updates as opposed to the fleeting activities brought by seasons that were retired each year leaving what felt like a hollowed out core at the start of each release year. By focusing on bespoke expansions rather than what sometimes felt like copy-pasted seasonal activities, it allowed the developers to try out more varied and interesting gameplay opportunities. Edge of Fate and Renegades brought light Metroidvania and Rogue-Like concepts into the main game in an effort to spice up the experience and reduce the treadmill like monotony of past efforts.
 
