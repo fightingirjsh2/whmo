@@ -9,7 +9,7 @@ tags:
   - Bungie
   - Opinion
 draft: false
-image:
+image: /images/Marathon_Standard_Keyart_16x9_EN.jpg
 ---
 Should fans of Destiny be rooting for Marathon to succeed to or fail? This topic has been hotly debated after the announcement that Destiny 2 is receiving its final update on June 9th, 2026, causing a civil war between the two communities as they debate the future of the two franchises and Bungie as a whole. In this rhetorical battle you have two camps, Marathon fans excited about the future of the highly-rated extraction shooter now that Bungie can focus the bulk of their development resources solely Marathon, and Destiny fans who are bitter that those new features are coming at the expense of a long-running successful franchise in Destiny. 
 
