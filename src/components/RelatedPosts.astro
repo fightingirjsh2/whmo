@@ -15,7 +15,7 @@ const { currentId, tags, collection, accentVar, feedLabel, backHref } = Astro.pr
 const normalizedTags = tags.map((t) => t.toLowerCase());
 const allPosts = await getCollection(collection);
 const others = allPosts
-  .filter((p) => p.id !== currentId)
+  .filter((p) => p.id !== currentId && !p.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const withSharedTags = others.filter((p) =>
