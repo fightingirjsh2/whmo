@@ -508,16 +508,15 @@ h1, h2, h3, h4 {
 .article__body strong { font-weight: 600; }
 
 .article__body a {
-  color: var(--ink);
+  color: var(--accent);
   text-decoration: underline;
-  text-decoration-color: var(--rule);
+  text-decoration-color: var(--accent);
   text-underline-offset: 3px;
-  transition: color 0.15s, text-decoration-color 0.15s;
+  transition: opacity 0.15s;
 }
 
 .article__body a:hover {
-  color: var(--accent);
-  text-decoration-color: var(--accent);
+  opacity: 0.75;
 }
 
 /* Inline images in article body */
