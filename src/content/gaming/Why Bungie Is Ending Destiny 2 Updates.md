@@ -3,7 +3,7 @@ title: Why Bungie Is Ending Destiny 2 Updates
 description: After almost 9 years of updates, Bungie has decided to move on from their aging yet beloved shooter.
 date: 2026-05-23
 author: C.M.
-image: /images/Marathon_Standard_Keyart_16x9_EN.jpeg
+image: /images/renegades_keyart.jpeg
 tags:
   - Destiny
   - News
