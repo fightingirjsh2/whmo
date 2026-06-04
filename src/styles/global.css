@@ -534,15 +534,28 @@ h1, h2, h3, h4 {
 .article__body strong { font-weight: 600; }
 
 .article__body a {
-  color: var(--link-color, var(--accent));
   text-decoration: underline;
-  text-decoration-color: var(--link-color, var(--accent));
   text-underline-offset: 3px;
   transition: opacity 0.15s;
 }
 
 .article__body a:hover {
   opacity: 0.7;
+}
+
+.article[data-section="gaming"] .article__body a {
+  color: var(--gaming);
+  text-decoration-color: var(--gaming);
+}
+
+.article[data-section="current-events"] .article__body a {
+  color: var(--events);
+  text-decoration-color: var(--events);
+}
+
+.article[data-section="sports"] .article__body a {
+  color: var(--sports);
+  text-decoration-color: var(--sports);
 }
 
 /* Inline images in article body */
