@@ -15,18 +15,18 @@ Should fans of Destiny be rooting for Marathon to succeed to or fail? This topic
 
 Over the course of the week since the end of Destiny announcement, some popular Destiny 2 content creators have sworn off Marathon as a concept, declaring that they will not play the game that they feel killed Destiny. Meanwhile, some insist that Destiny fans should flock to Marathon, and commit to buying seasons and microtransactions with the argument being threefold:
 
-Argument 1: Marathon's Success is Bungie's success, and if Marathon fails, Sony may shutter Bungie's door killing the chance of any Destiny revival
-Argument 2: In order to incentivize Sony to approve the development of more Destiny (be that Destiny 3 or the revival of Destiny 2), and for Bungie to fund that development, Marathon needs to thrive and not just survive the next few years
-Argument 3: Destiny has had 12 years of support, quit being a baby and maybe Destiny will return some day but enjoy other games in the meantime(/s)
+Argument 1: Marathon's Success is Bungie's success, and if Marathon fails, Sony may shutter Bungie's door killing the chance of any Destiny revival. 
+Argument 2: In order to incentivize Sony to approve the development of more Destiny (be that Destiny 3 or the revival of Destiny 2), and for Bungie to fund that development, Marathon needs to thrive and not just survive the next few years. 
+Argument 3: Destiny has had 12 years of support, quit being a baby and maybe Destiny will return some day but enjoy other games in the meantime(/s). 
 
 After purchasing Bungie for $3.6 billion with not much to show for it, Sony has a confidence problem that can only be solved with huge piles of cash, and with Marathon being Bungie's only live game, it is Destiny fans only hope to deliver Bungie's salvation, and hopefully Destiny 3.
 
 With that background out of the way, here's my take.
 
 There are three end cases for Marathon.
-Outcome 1: The player base fails to grow, and the game ceases development later in 2026 or early 2027.
-Outcome 2: The player base grows moderately, and the game continues support for a few years before ceasing development.
-Outcome 3: The player base grows massively, is a hit, and support continues for many years to come.
+Outcome 1: The player base fails to grow, and the game ceases development later in 2026 or early 2027.  
+Outcome 2: The player base grows moderately, and the game continues support for a few years before ceasing development.  
+Outcome 3: The player base grows massively, is a hit, and support continues for many years to come.  
 
 According to the logic above, option 3 is the best case for Destiny's future as Bungie is flush with cash, is on Sony's nice list, and can expand to a size where they can adequately support Marathon and develop the future of Destiny in parallel, but I think this view is dead wrong. In the world where Marathon thrives and is printing money, I don't think we see more Destiny, I think we see more Marathon. Every dollar of that success will be proof that killing Destiny was the correct call and be funneled into Marathon's development. The classic comparison case is Titanfall and Apex Legends. Apex Legends massive success, no matter how much is waxes and wanes, has never encouraged the development of a Titanfall 3 and why would it? Moving on from the Titanfall games is the thing that brought that success, logic doesn't say you go back to the thing you moved on from, it dictates that you double down on the thing that brought you success. 
 
