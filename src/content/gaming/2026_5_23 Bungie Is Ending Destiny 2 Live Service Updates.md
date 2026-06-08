@@ -1,5 +1,5 @@
 ---
-title: Why Bungie Is Ending Destiny 2 Updates
+title: Bungie Is Ending Destiny 2 Live Service Updates
 description: After almost 9 years of updates, Bungie has decided to move on from their aging yet beloved shooter.
 date: 2026-05-23
 author: C.M.
@@ -7,6 +7,7 @@ image: /images/renegades_keyart.jpeg
 tags:
   - Destiny
   - News
+draft: false
 ---
 
 On Thursday, May 21, 2026 Bungie announced that they will deliver their final live service update to Destiny 2 in a move that surprised fans of the genre defining looter shooter. 
