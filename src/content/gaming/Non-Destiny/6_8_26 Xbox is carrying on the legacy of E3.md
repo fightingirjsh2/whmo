@@ -1,15 +1,20 @@
 ---
-title: The Future of Destiny Should Be Based on Destiny 2, Not Destiny 3
-description: The case for a future built around Destiny 2
-date: 2026-05-29
+title: Only Xbox is Carrying on the Legacy of E3
+description: E3 has been dead for years now, but gaming showcases could learn a lesson from the past
+date: 2026-06-07
 author: C.M.
 tags:
-  - Destiny
-  - Bungie
   - Opinion
-draft: true
+  - E3
+  - Xbox
+  - Playstation
+draft: false
 image: /images/old_chicago_conceptart.jpg
 ---
+Playstation has too many shows so they all are weak
+Xbox saves some things in the chamber and therefore are better
+
+
 In the aftermath of [Bungie's announcement](https://www.bungie.net/7/en/News/Article/d2_may_21_2026) that Destiny 2 will no longer receive live service updates after the mammoth June 9th Monuments of Triumph update, the Destiny community has been clamoring for Destiny 3. With reports for Bloomberg and Forbes (hyperlinks) all but confirming that this is not currently greenlit or in development, a change.org petition sprouted up that at the time of writing has over 320,000 signatures, showing how resolved the community is in this goal to convince Sony to take a significant leap of faith in a franchise arguably on the downslope. Aside from the petition, the announcement started a wave of community discourse full of arguments, memories, art, clips, hope and pessimism. While not all positive, this amount of buzz serves as a reminder of how popular Destiny is in people hearts after a few years of decreasing player numbers.
 
 Truthfully it's not just this announcement that has caused this wave of calls for Destiny 3, it's something that has been bubbling in the community for a few years now, and was especially amplified after the release of The Final Shape. While some were excited about the newly announced Fate Saga shepherding Destiny 2 into a new era, others felt The Final Shape was an appropriate time to leave Destiny 2 behind in favor of Destiny 3, and some felt that it was a satisfying conclusion to the franchise, and it was time to move on from Destiny as a whole. 
