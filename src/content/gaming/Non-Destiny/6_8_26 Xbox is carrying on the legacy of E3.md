@@ -8,7 +8,7 @@ tags:
   - E3
   - Xbox
   - Playstation
-draft: false
+draft: true
 image: /images/old_chicago_conceptart.jpg
 ---
 Playstation has too many shows so they all are weak
