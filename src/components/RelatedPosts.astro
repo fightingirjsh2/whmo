@@ -27,7 +27,7 @@ const withoutSharedTags = others.filter((p) =>
 
 const related = [...withSharedTags, ...withoutSharedTags].slice(0, 3);
 
-const slug = (id: string) => id.replace(/\.md$/, "");
+const slug = (id: string) => id.replace(/^.*\//, "").replace(/\.md$/, "");
 ---
 
 {related.length > 0 && (
