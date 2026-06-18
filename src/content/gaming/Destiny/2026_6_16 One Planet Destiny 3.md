@@ -8,14 +8,9 @@ tags:
   - Bungie
   - Opinion
 draft: false
-image: /images/old_chicago_conceptart.jpg
+image: /images/old_chicago_conceptart.jpeg
 ---
-Now that Destiny 2's final update has shipped, I have been looking backwards at what lessons can be learned from Destiny 2. While I ponder these thoughts, I am writing articles that explore different views on what went wrong, what could have been differently, and what Bungie could do differently in the future if they ever decide to work on a proper Destiny 3.
 
-Other articles in this series:
-Links
-Slices idea
-Base should be Destiny 2
 
 Destiny 3 is going to be too expensive and take too long, so its not being made.
 
@@ -33,7 +28,7 @@ Development budget, man power requirements, and time are incredibly important co
 
 What my 'Tiny' Destiny 3 would look like.
 
-At its very core is a potentially sad, but to me exciting decision. One Destination. 
+## At its very core is a potentially sad, but to me exciting decision. One Destination. 
 
 One launch destination would immediately trim the game budget significantly, hopefully allowing it to be built faster with a smaller team. One destination could be a great opportunity to bring some of the mystery back to Destiny. Rather than focusing on shallow scale, the team could focus on building a destination with deep connection to the story and secrets to draw players into the exploration. With a narrower focus, the game can afford to make exploration more rewarding, with multiple activities bringing the destination to life. 
 
@@ -49,7 +44,7 @@ For example, in another article I talk about the issues subclass 3.0 brought to 
 
 Reusing the vast Destiny 2 sandbox could put the game in a great state without the opportunity to make huge mistakes that hurt the launch, and reduce the amount of work needed to get Destiny 3 out the door.
 
-### Some Destiny 2 activities and gear should come forward
+## Some Destiny 2 activities and gear should come forward
 
 Obviously, not all Destiny 2 gear and activities could come forward. From a technical standpoint, any Destiny 3 engine and system upgrades could potentially limit the ability to do so. But even from a bloat perspective, Destiny 3 should be a focused tailored experience, and adding in destinations and actiivties from Destiny 2 would muddy the waters. At present, Destiny 2 can be a confusing mess for new and returning players, and simply put, it may ruin this fresh start to bring to much forward.
 
@@ -57,36 +52,43 @@ However, bringing forward a curated selection of content could help make Destiny
 
 Managing this strategy would be difficult because its a fine between growing an amazing game with some reprised content and overwhelming your new game with old bloat that doesn't add to the experience.
 
-Keep all Destiny 3 content relevant
+## Keep all Destiny 3 content relevant, even if that means there is less of it
 
-One of the greatest mistakes Destiny 2 made was leaving behind content when new content dropped. Aside from the massive issue that is the Destiny Content Vault, each expansion left behind the past year, removing all seasons and leaving old raids, dungeons, and destinations in an unrewarding and irrelevant state. Monuments of triumph showed how much interest there is in playing older content if it is kept relevant with gear upgrades, difficulty tuning to the new sandbox, and even small content updates.
+One of the greatest mistakes Destiny 2 made was leaving behind content when new content dropped. Aside from the massive issue that is the Destiny Content Vault, each expansion left behind the past year, removing all seasons and leaving old raids, dungeons, and destinations in an irrelevant and unrewarding state. Monuments of triumph showed how much interest there is in playing older content if it is kept relevant with gear upgrades, difficulty tuning to the new sandbox, and even small content updates.
 
-Destiny is an amazing and massive world, but if each year we only have one Destination to care about, it feels small and hollow. For each year in Destiny 3, all content should feel integrated into the core game. For example, rather than the new raid dropping pinnacle level gear, and older raids dropping gear that sometimes felt useless, have the new raid have double drops at pinnacle level, with older raids having one pinnacle drop and updated perk pools each year. These small things give incentive to keep playing the content you want to play, rather than forcing players into exclusively new content.
+Destiny is an amazing and massive world, but if each year we only have one Destination to care about, it feels small and hollow. For each year in Destiny 3, all content should feel integrated into the core game. For example, rather than only the new raid dropping pinnacle level gear, and older raids dropping gear that sometimes felt useless, have the new raid have double drops at pinnacle level, with older raids having one pinnacle drop and updated perk pools each year. These small things give incentive to keep playing the content you want to play, rather than forcing players into exclusively new content.
 
-Find ways to bring forward the legacy of our guardians
+How much can be reasonably achieved in this space without hindering the development of new content is hard to say. Monuments of triumph showed us that leveraging legacy content makes the game world feel fuller and more exciting, and that should serve as a core tenant of the franchise moving forward.
+
+## Find ways to bring forward the legacy of our guardians
 
 This is a tricky spot because you don't want to foment the feelings of FOMO that hurt Destiny 2, but bring forward some form of cross progression on ornaments and other cosmetics. Maybe you bring forward eververse ornaments, with players that already purchased them having them already unlocked, granting a feeling of continuity from the past game. Emblems would be awesome to carry forward but without a vehicle for new players to earn them, it may keep the feeling that they already missed out on too much. I can't solve all these dilemmas in one article, but these conversations open the door to making players feel rewarded for their past experiences in Destiny.
 
-Find a seasonal structure that supports the core game, and doesn't stretch the team thin
+## Find a seasonal structure that supports the core game, and doesn't stretch the team thin
 
-I think the live service part of Destiny is important, but if important things are going to happen in seasons, they can't leave the game every year. Focus seasons on expanding the core content offerings with new activities that build the core game while also offering unique experiences. While the portal was obviously not good for the game as implemented, I think the idea of a 6 player activity playlist, organically built over time via seasonal activities was one of its strongest deliveries.
+I think the live service part of Destiny is essential to keep the game relevant, but if important things are going to happen in seasons, they can't leave the game every year. Focus seasons on expanding the core content offerings with new activities that add to the existing systems, while also offering unique experiences. While the portal was obviously not good for the game as implemented, I think the idea of a 6 player activity playlist, organically built over time via seasonal activities was one of its strongest deliveries.
 
-Seasons should be built in a way so they play like a small expansion, with story beats and cutscenes that work well when played at any time so they can be left in the game as core content offerings. Going back and forth to the holoprojector (which I know was eventually fixed), cannot be the way a season plays.
+Seasons should be built in a way so they play like a small expansion, with story beats and cutscenes that work well when played at any time so they can be left in the game for lapsed players. Going back and forth to the holoprojector (which I know was eventually fixed), cannot be the way a season plays.
 
-Whatever amount of seasons the team can handle, thats the right decision. This content should be additive, not mandatory. If the content drop amounts to bloat in the game, it doesnt need to be there. If that means we get 1 or 2 seasons a year of good content, thats the right decision.
+Whatever amount of seasonal content the team can handle, thats the right amount. This content should be additive, not mandatory. If the content drop amounts to bloat in the game, it doesn't need to be there. If that means we get 1 or 2 seasons a year of good content, thats the right decision.
 
-Because the game is smaller, launch at $40.00 (US).
+## Don't be afraid of over delivery
+
+This is somewhat a snarky point about the "Beware of over delivery" slide that has circulated the community for years, but there is a real lesson here. To make a smaller Destiny 3 with a smaller budget and team, take all the wins you can. Not all expansions will be equally beloved, and thats okay. But if the opportunity presents itself to deliver something above and beyond expectations, take it. The best Destiny experiences form memories that keep players attached to the game for years to come, even in lulls. Not to mention that exceptional expansions serve as gateway drugs for new players to fall in love with this world.
+
+## Because the game is smaller, launch at $40.00 (US).
 
 Getting players in the door to this journey is key, and a lower starting price could prove a great way to do so. While Marathon showed that the price tag alone wont attract a large audience, the lower price tag may sway people already interested in Destiny to pick the game up that maybe would balk at a $70 price tag.
 
-Summary of a year of Destiny 3:
-	-One Destination with deep exploration
-	-One Raid, with old raids kept relevant
-	-1 or 2 seasons spaced accordingly
-	-One Dungeon with a season
-	-General updates to keep all content relevant and exciting, within reason
+## Summary of a year of Destiny 3:
+
+- One Destination with deep exploration
+- One Raid, with old raids kept relevant
+- 1 or 2 seasons spaced accordingly
+- One Dungeon with a season
+- General updates to keep all content relevant and exciting, within reason
 
 
 I fear that past precedent will dictate that a proper Destiny 3 has to be a fully loaded arsenal, when the game would benefit in more than one way from a smaller game at launch. I think that the most important thing for the Destiny community is that the franchise continues, and finding ways to reduce budget and team size is the way to do that.
 
-For me, Destiny 3 doesn't have to be a massive $500 million dollar game, it can be a smaller  experience full of mystery and exploration that I can go on a decade long journey with, alongside millions of eager guardians.
+For me, Destiny 3 doesn't have to be a massive $500 million dollar game, it can be a smaller  experience full of mystery and exploration that I can go on a decade long journey with, alongside millions of eager guardians. I am not a game developer, but I think the above framework sets forth a vision that is achievable for a smaller Bungie, and could prove to be the right path forward for Destiny.
