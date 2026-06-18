@@ -1,6 +1,6 @@
 ---
 title: The Sequel Model Destiny 2 Needed Years Ago
-description: For years Destiny 2 players have demanded Destiny 3, here's how Bungie could have given them what they really wanted without an ill-fated overhaul
+description: For years Destiny 2 players have demanded Destiny 3, here's how Bungie could have given them what they really wanted without an unnecessary sequel
 date: 2026-06-09
 author: C.M.
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Only Xbox is Carrying on the Legacy of E3
+title: Xbox Is Carrying on the Legacy Of E3
 description: E3 has been dead for years now, but gaming showcases could learn a lesson from the past
 date: 2026-06-07
 author: C.M.
