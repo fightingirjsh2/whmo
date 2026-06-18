@@ -88,7 +88,7 @@ Getting players in the door to this journey is key, and a lower starting price c
 - One Dungeon with a season
 - General updates to keep all content relevant and exciting, within reason
 
-
+## Conclusion
 I fear that past precedent will dictate that a proper Destiny 3 has to be a fully loaded arsenal, when the game would benefit in more than one way from a smaller game at launch. I think that the most important thing for the Destiny community is that the franchise continues, and finding ways to reduce budget and team size is the way to do that.
 
 For me, Destiny 3 doesn't have to be a massive $500 million dollar game, it can be a smaller  experience full of mystery and exploration that I can go on a decade long journey with, alongside millions of eager guardians. I am not a game developer, but I think the above framework sets forth a vision that is achievable for a smaller Bungie, and could prove to be the right path forward for Destiny.
