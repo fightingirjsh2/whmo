@@ -41,7 +41,7 @@ While some may be disappointed with one destination, the nature of destiny makes
 
 To me, Destiny is all about the Journey, and the contrasting feeling of new vs old over time. I enjoy watching the director grow each year, new weapons and abilities, new raids and activities, the ebb and flow of balance patches adding a reason to use an old super or exotic, a new activity on an old destination causing a great influx of players to old abandoned locations. The combination of exploring the new and old evokes and attachment to the world that is hard to mirror in any other experience. None of these amazing experience require a massive launch, but rather a continuous journey over time. The expansion of the experience over time is more important that the quantity at launch, and one planet can deliver that fine.
 
-##To continue trimming the budget, build Destiny 3 on the foundations set in Destiny 2
+## To continue trimming the budget, build Destiny 3 on the foundations set in Destiny 2
 
 I envision a Destiny 3 built upon the very robust sandbox of Destiny 2; evolution not revolution. There is no reason to reinvent the wheel and develop a fully new sandbox, almost assuredly making many poor decisions that take years to rebound from (Looking at you Destiny 2 Launch, Edge of Fate). Take the foundations set in Monument of Triumph, with a massive renovation to balance, to launch the game in a distinct yet familiar way. Thats not to say every ability and piece of gear comes forward, but rather that much of Destiny 2's systems can be adapted into a fresh start for a fraction of the budget a full rebuild would require. Abilities and weapons that are hard to balance around can be left behind, giving a fresh start to the sandbox, while keeping the soul that Destiny 2 has acquired over almost 9 years of updates.
 
@@ -49,7 +49,7 @@ For example, in another article I talk about the issues subclass 3.0 brought to 
 
 Reusing the vast Destiny 2 sandbox could put the game in a great state without the opportunity to make huge mistakes that hurt the launch, and reduce the amount of work needed to get Destiny 3 out the door.
 
-###Some Destiny 2 activities and gear should come forward
+### Some Destiny 2 activities and gear should come forward
 
 Obviously, not all Destiny 2 gear and activities could come forward. From a technical standpoint, any Destiny 3 engine and system upgrades could potentially limit the ability to do so. But even from a bloat perspective, Destiny 3 should be a focused tailored experience, and adding in destinations and actiivties from Destiny 2 would muddy the waters. At present, Destiny 2 can be a confusing mess for new and returning players, and simply put, it may ruin this fresh start to bring to much forward.
 
