@@ -80,11 +80,12 @@ Because the game is smaller, launch at $40.00 (US).
 Getting players in the door to this journey is key, and a lower starting price could prove a great way to do so. While Marathon showed that the price tag alone wont attract a large audience, the lower price tag may sway people already interested in Destiny to pick the game up that maybe would balk at a $70 price tag.
 
 Summary of a year of Destiny 3:
-- One Destination with deep exploration
-- One Raid, with old raids kept relevant
-- 1 or 2 seasons spaced accordingly
-	- One Dungeon with a season
-- General updates to keep all content relevant and exciting, within reason
+	-One Destination with deep exploration
+	-One Raid, with old raids kept relevant
+	-1 or 2 seasons spaced accordingly
+	-One Dungeon with a season
+	-General updates to keep all content relevant and exciting, within reason
+
 
 I fear that past precedent will dictate that a proper Destiny 3 has to be a fully loaded arsenal, when the game would benefit in more than one way from a smaller game at launch. I think that the most important thing for the Destiny community is that the franchise continues, and finding ways to reduce budget and team size is the way to do that.
 
