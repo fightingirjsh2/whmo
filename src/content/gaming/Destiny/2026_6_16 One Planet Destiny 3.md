@@ -22,12 +22,16 @@ But assuming Bungie is only approximately 400-500 developers, and 100 stay with 
 
 Destiny and Destiny 2 each launched with four destinations surrounded by systems of questionable quality; Destiny 3 can and should be smaller and more focused. Over the years players have demanded the game return to deeper mysterious worlds full of surprises, and you do not need four destinations to deliver that. When I look back at my time with Destiny and Destiny 2, I am nostalgic for the music, the worlds, the raids, and the memories made with friends. Four destinations are not necessary to achieve that.
 ![Destiny 1 Launch Director](/images/tinyD3/d1_director.jpeg)
+Destiny 1 Launch Director
 ![Destiny 2 Launch Director](/images/tinyD3/d2_launch_director.jpeg)
+Destiny 2 Launch Director
+
 Development budget, manpower requirements, and time are incredibly important considerations both for getting Destiny 3 green lit and for getting it across the finish line. Focusing on a smaller offering that could be achieved with a smaller team on a tighter timeline and budget is essential for getting the game into players' hands. This is especially important with the rumors circulating about the size of the layoffs Bungie is about to endure. A limited scope Destiny 3 may be our only hope.
 
 Let's explore what 'Tiny' Destiny 3 would look like.
 
 ![Destiny 2 One Planet Mood Board Concept Art](/images/tinyD3/d2_concept_one_planet.jpg)
+Destiny 2 Mood Board Concept Art, Illustrative purposes [Artstation link].(https://www.artstation.com/artwork/b4m2m)
 ## At its very core is a potentially sad, but (to me) exciting decision: one destination 
 
 One launch destination would immediately trim the game budget significantly, hopefully allowing it to be built faster with a smaller team. One destination could be a great opportunity to bring some of the mystery back to Destiny. Rather than focusing on a shallow scale, the team could focus on building a destination with a deep connection to the story and secrets to draw players into the exploration. With a narrower focus, the game can afford to make exploration more rewarding, with multiple activities bringing the destination to life. 
@@ -36,6 +40,7 @@ While some may be disappointed with one destination, the nature of Destiny makes
 
 To me, Destiny is all about the journey; the warm feeling of watching the game grow over time from humble beginning to new frontiers. I enjoy watching the Director grow each year, new weapons and abilities, new raids and activities, the ebb and flow of balance patches adding a reason to use an old super or exotic, and a new activity on an old destination causing a great influx of players to old abandoned locations. The combination of exploring the new and old evokes an attachment to the world that is hard to mirror in any other experience. These amazing experiences don’t require a massive launch, but rather a consistently growing journey. The expansion of the experience over time is more important that the quantity at launch, and one planet can deliver that fine.
 ![Destiny 2 Monuments of Triumph Director](/images/tinyD3/MoTDirector.jpg)
+Monuments of Triumph Director, Destiny 2
 ## To continue trimming the budget, build Destiny 3 on the foundations set in Destiny 2
 
 I envision Destiny 3 to be more like Destiny 2.5, by building upon the very robust sandbox of Destiny 2 rather than building from scratch - evolution, not revolution. There is no reason to reinvent the wheel and develop a completely new sandbox, almost assuredly making many poor decisions that take years to rebound from (looking at you Destiny 2 launch, Edge of Fate). Use the foundations set in Monument of Triumph, with a massive renovation to balance, to launch the game in a distinct yet familiar way. That’s not to say every ability and piece of gear comes forward, but rather that much of Destiny 2's systems can be adapted into a fresh start for a fraction of the budget a full rebuild would require. Abilities and weapons that are hard to balance around can be left behind, giving a fresh start to the sandbox, while keeping the soul that Destiny 2 has acquired over almost 9 years of updates.
@@ -46,6 +51,7 @@ Leveraging Destiny 2 sandbox could put the game in a great state without the opp
 
 
 ![Subclass 3.0 Example, Void Warlock](/images/tinyD3/subclass3_0.jpeg)
+Subclass 3.0 Example, Void Warlock, Destiny 2
 ## Controversal: Rework Subclass 3.0 to be more casual friendly
 
 WAIT WAIT WAIT... Don't click away yet!!!
@@ -91,6 +97,7 @@ Seasons should be built in a way so they play like a small expansion, with story
 When it comes to seasonal content, sometimes less is more. Whatever amount of seasonal content the team can handle, that’s the right amount.  This content should be additive, not mandatory. If the content drop amounts to bloat in the game, it doesn't need to be there. If that means we only get one or two seasons per year of good content, that’s the right decision. Keeping these drops fewer and further between helps prevent the file size bloat and management nightmares that were the root of the DCV decision.
 
 ![Infamous Destiny 2 Overdelivery Slide](/images/tinyD3/D2_overdelivery.jpeg)
+Infamous Destiny 2 Overdelivery Slide
 ## Don't be afraid of overdelivery
 
 This is somewhat a snarky point about the "Beware of Overdelivery" slide that has circulated the community for years, but there is a real lesson here. To make a smaller Destiny 3 with a smaller budget and team, take all the wins you can. Not all expansions will be equally beloved, and that’s okay. But if the opportunity presents itself to deliver something above and beyond expectations, take it. The best Destiny experiences form memories that keep players attached to the game for years to come, even in lulls. Not to mention that exceptional expansions serve as gateway drugs for new players to fall in love with this world.
