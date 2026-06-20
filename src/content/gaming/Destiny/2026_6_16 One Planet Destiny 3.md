@@ -12,9 +12,9 @@ image: /images/tinyD3/xivu_arath_concept.jpeg
 ---
 Destiny 3 is going to be too expensive and take too long, so it's not being made.
 
-It's not just me saying that. In the weeks since Bungie announced the end of active development of Destiny 2, players and journalists have been weighing in on the future of the franchise, if there is one at all. Jason Shreier and Paul Tassi have both reported that one of the major hangups causing Sony to not have greenlit Destiny 3 by now is the massive cost associated with developing the project. The numbers being thrown around are daunting but not surprising: 5-6 years and around $500 million dollars, if not more. This shouldn't come as a shock if you've been watching the gaming industry recently. Games are coming in with massive budgets and taking an eternity to develop. Jason Schreier has made two videos discussing these topics and they are worth a watch to serve as a foundation to this conversation.
+It's not just me saying that. In the weeks since Bungie announced the end of active development of Destiny 2, players and journalists have been weighing in on the future of the franchise, if there is one at all. Jason Shreier ([Link to Article].(https://www.bloomberg.com/news/articles/2026-05-21/bungie-plans-layoffs-after-ending-destiny-2-development?embedded-checkout=true)) and Paul Tassi ([Link to Article].(https://www.forbes.com/sites/paultassi/2026/05/28/new-info-on-destiny-2-alarm-bells-marathons-role-and-destiny-infinity-pitch/)) have both reported that one of the major hangups causing Sony to not have green lit Destiny 3 by now is the massive cost associated with developing the project. The numbers being thrown around are daunting but not surprising: 5-6 years and around $500 million dollars, if not more. This shouldn't come as a shock if you've been watching the gaming industry recently. Games are coming in with massive budgets and taking an eternity to develop. Jason Schreier has made two videos ([Why Video Games Cost So Much To Make].(https://www.youtube.com/watch?v=nvhmBqRjtBQ))([Why Games Now Take 6+ Years To Make].(https://www.youtube.com/watch?v=lwJqPvDA4Yw)) discussing these topics and they are worth a watch to serve as a foundation to this conversation.
 
-With this in mind it's understandable why Sony hasn't agreed to fund Destiny 3. After Marathon's questionable success and Destiny 2 slowly but surely losing players over the years, especially after 2024's The Final Shape expansion, it seems dubious at best to put that type of money into a studio that struggled to ship Marathon on time and presumably on budget (reportedly Marathon cost over $200 million dollars). 
+With this in mind it's understandable why Sony hasn't agreed to fund Destiny 3. After Marathon's questionable success and Destiny 2 slowly but surely losing players over the years, especially after 2024's The Final Shape expansion, it seems dubious at best to put that type of money into a studio that struggled to ship Marathon on [time].(https://www.bungie.net/7/en/News/Article/marathon_update) and presumably on [budget].(https://www.forbes.com/sites/paultassi/2026/04/09/checking-in-on-marathon-a-month-after-launch/) (reportedly Marathon cost over $200 million dollars). 
 
 After the decision to leave Destiny 2 behind to give Marathon a fair shake at success, Bungie is currently pitching new projects to work on for the future. A round of layoffs is expected to hit the studio like a freight train, reportedly impacting upwards of 50% of the studio. Bungie would survive as a 400-person team focused on giving Marathon its full focus for at least the next year or so (seasons 3-5). Who knows, maybe a coming update will drastically improve Marathon’s player numbers and it will continue further, but at its current trajectory it is probably safer to assume that sometime in 2027 the bulk of Bungie’s staff will begin development on a new project, leaving a small team on Marathon to continue delivering content updates.
 
@@ -27,7 +27,7 @@ Development budget, manpower requirements, and time are incredibly important con
 
 Let's explore what 'Tiny' Destiny 3 would look like.
 
-![Destiny 2 One Planet Mood Board Concept Art](/images/tinyD3/d2_concept_one_planet.jpeg)
+![Destiny 2 One Planet Mood Board Concept Art](/images/tinyD3/d2_concept_one_planet.jpg)
 ## At its very core is a potentially sad, but (to me) exciting decision: one destination 
 
 One launch destination would immediately trim the game budget significantly, hopefully allowing it to be built faster with a smaller team. One destination could be a great opportunity to bring some of the mystery back to Destiny. Rather than focusing on a shallow scale, the team could focus on building a destination with a deep connection to the story and secrets to draw players into the exploration. With a narrower focus, the game can afford to make exploration more rewarding, with multiple activities bringing the destination to life. 
@@ -35,7 +35,7 @@ One launch destination would immediately trim the game budget significantly, hop
 While some may be disappointed with one destination, the nature of Destiny makes this a self-healing problem. With each expansion, the world grows and this dilemma is resolved.
 
 To me, Destiny is all about the journey; the warm feeling of watching the game grow over time from humble beginning to new frontiers. I enjoy watching the Director grow each year, new weapons and abilities, new raids and activities, the ebb and flow of balance patches adding a reason to use an old super or exotic, and a new activity on an old destination causing a great influx of players to old abandoned locations. The combination of exploring the new and old evokes an attachment to the world that is hard to mirror in any other experience. These amazing experiences don’t require a massive launch, but rather a consistently growing journey. The expansion of the experience over time is more important that the quantity at launch, and one planet can deliver that fine.
-![Destiny 2 Monuments of Triumph Director](/images/tinyD3/MoTDirector.jpeg)
+![Destiny 2 Monuments of Triumph Director](/images/tinyD3/MoTDirector.jpg)
 ## To continue trimming the budget, build Destiny 3 on the foundations set in Destiny 2
 
 I envision Destiny 3 to be more like Destiny 2.5, by building upon the very robust sandbox of Destiny 2 rather than building from scratch - evolution, not revolution. There is no reason to reinvent the wheel and develop a completely new sandbox, almost assuredly making many poor decisions that take years to rebound from (looking at you Destiny 2 launch, Edge of Fate). Use the foundations set in Monument of Triumph, with a massive renovation to balance, to launch the game in a distinct yet familiar way. That’s not to say every ability and piece of gear comes forward, but rather that much of Destiny 2's systems can be adapted into a fresh start for a fraction of the budget a full rebuild would require. Abilities and weapons that are hard to balance around can be left behind, giving a fresh start to the sandbox, while keeping the soul that Destiny 2 has acquired over almost 9 years of updates.
@@ -45,7 +45,7 @@ For example, in another article I talk about the issues subclass 3.0 brought to 
 Leveraging Destiny 2 sandbox could put the game in a great state without the opportunity to make huge mistakes that hurt the launch, and reduce the amount of work needed to get Destiny 3 out the door.
 
 
-![The Eververse Store Destiny 2](/images/tinyD3/subclass3_0.jpeg)
+![Subclass 3.0 Example, Void Warlock](/images/tinyD3/subclass3_0.jpeg)
 ## Controversal: Rework Subclass 3.0 to be more casual friendly
 
 WAIT WAIT WAIT... Don't click away yet!!!
@@ -90,7 +90,7 @@ Seasons should be built in a way so they play like a small expansion, with story
 
 When it comes to seasonal content, sometimes less is more. Whatever amount of seasonal content the team can handle, that’s the right amount.  This content should be additive, not mandatory. If the content drop amounts to bloat in the game, it doesn't need to be there. If that means we only get one or two seasons per year of good content, that’s the right decision. Keeping these drops fewer and further between helps prevent the file size bloat and management nightmares that were the root of the DCV decision.
 
-![The Portal in its original flawed state as found in The Edge of Fate](/images/tinyD3/D2_overdelivery.jpeg)
+![Infamous Destiny 2 Overdelivery Slide](/images/tinyD3/D2_overdelivery.jpeg)
 ## Don't be afraid of overdelivery
 
 This is somewhat a snarky point about the "Beware of Overdelivery" slide that has circulated the community for years, but there is a real lesson here. To make a smaller Destiny 3 with a smaller budget and team, take all the wins you can. Not all expansions will be equally beloved, and that’s okay. But if the opportunity presents itself to deliver something above and beyond expectations, take it. The best Destiny experiences form memories that keep players attached to the game for years to come, even in lulls. Not to mention that exceptional expansions serve as gateway drugs for new players to fall in love with this world.
@@ -99,7 +99,7 @@ This is somewhat a snarky point about the "Beware of Overdelivery" slide that ha
 
 Getting players in the door to this journey is key, and a lower starting price could prove a great way to do so. While Marathon showed that the price tag alone wont attract a large audience, the lower price tag may sway people already interested in Destiny to pick the game up that may balk at a $70.00 price tag.
 
-![The Eververse Store Destiny 2](/images/tinyD3/eververse_example.jpeg)
+![The Eververse Store Destiny 2](/images/tinyD3/eververse_example.png)
 ## Less is more in the Eververse Store
 
 Obviously I don't have any data to back up what I'm about to say, but hear me out.
