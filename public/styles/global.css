@@ -554,6 +554,8 @@ h1, h2, h3, h4 {
 /* Hero image */
 .article-hero {
   width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
   max-height: 520px;
   overflow: hidden;
   margin-bottom: 0;
