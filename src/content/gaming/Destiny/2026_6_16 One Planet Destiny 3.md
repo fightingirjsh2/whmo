@@ -34,7 +34,7 @@ Let's explore what 'Tiny' Destiny 3 would look like.
 Destiny 2 Mood Board Concept Art, Illustrative purposes [Artstation link](https://www.artstation.com/artwork/b4m2m)
 ## At its very core is a potentially sad, but (to me) exciting decision: one destination 
 
-One launch destination would immediately trim the game budget significantly, hopefully allowing it to be built faster with a smaller team. One destination could be a great opportunity to bring some of the mystery back to Destiny. Rather than focusing on a shallow scale, the team could focus on building a destination with a deep connection to the story and secrets to draw players into the exploration. With a narrower focus, the game can afford to make exploration more rewarding, with multiple activities bringing the destination to life. 
+One launch destination would immediately trim the game budget significantly, hopefully allowing it to be built faster with a smaller team. One destination could be a great opportunity to bring some of the mystery back to Destiny. Rather than focusing on building multiple shallow planets, the team could focus on building a destination with a deep connection to the story and secrets to draw players into the exploration. With a narrower focus, the game can afford to make exploration more rewarding, with multiple activities bringing a single destination to life. 
 
 While some may be disappointed with one destination, the nature of Destiny makes this a self-healing problem. With each expansion, the world grows and this dilemma is resolved.
 
@@ -62,7 +62,7 @@ For a newer player, first needs to come engagement with the core game, then come
 
 I don't have a solution, but some mixture of Subclass 2.0 and Subclass 3.0 is a must to help new players get into the game. Whether that is a more complex subclass tree system that allows for more simple building, or some form of one click default builds on the subclass screen, something needs to happen to help keep new players from being overwhelmed.
 
-## Few Destiny 2 activities and gear should come forward
+## A few Destiny 2 activities and gear should come forward
 
 Obviously, not all Destiny 2 gear and activities could come forward. From a technical standpoint, any Destiny 3 engine and system upgrades could potentially limit the ability to do so. But even from a bloat perspective, Destiny 3 should be a focused, tailored experience, and adding in destinations and activities from Destiny 2 would muddy the waters. At present, Destiny 2 can be a confusing mess for new and returning players, and simply put, bringing too much forward could ruin this fresh start.
 
@@ -84,7 +84,7 @@ This is a tricky spot because you don't want to start your new game with the FOM
 
 Alternatively you could lean into light cross progression. For example, maybe you bring forward a selection of eververse ornaments, ships, ghosts and sparrows, with players that already purchased them having them automatically unlocked, granting a feeling of continuity from the past game. 
 
-Emblems would be awesome to carry forward but without a vehicle for new players to earn them, it may create the feeling that they already missed out on too much. Destiny 3 should feel like a fresh start for the community to welcome new players, but if they feel like they are behind on Day 1, it may loosen the connection they feel to the game. 
+Emblems would be awesome to carry forward because some of them show off great achievements, but without a vehicle for new players to earn them, it may create the feeling that they already missed out on too much. Destiny 3 should feel like a fresh start for the community to welcome new players, but if they feel like they are behind on Day 1, it may loosen the connection they feel to the game. 
 
 I can't solve all these dilemmas in one article, but these conversations open the door to making players feel rewarded for their past experiences in Destiny. Nothing says any of these systems have to be there at launch, maybe a few years into Destiny 3 things are brought forward in a celebratory manner.
 
@@ -114,7 +114,7 @@ Obviously I don't have any data to back up what I'm about to say, but hear me ou
 
 I very rarely buy Silver or anything from the Eververse store, and its because there is so much of it. My simple gamer brain likes to collect things, I want to be able to get almost everything and then strive to complete that list when I only have few things left. But the Destiny 2 Eververse store is so chock full of *stuff* that I cannot bring myself to care in the least. Every once in a while I buy a weapon ornament or a fancy Silver only armor set, but I simply cannot bring myself to care about any of it when I am hit with a tidal wave of items every season.
 
-Additionally, I don't think some of it even makes sense in the store. How much money can Bungie possibly have made on ghost projects in the lifetime of Destiny 2? I think those would be better suited as free drops in the game so players feel that store is only for higher quality things. Most ships, sparrows, and ghosts would be better suited as drops in the game, with the more playful and fun ones as Eververse purchases since they are unique and don't really fit into any content. I think it makes perfect sense to buy emotes and silly beach themed cosmetics in the store, but it makes much less sense to be buying random hive themed sparrow #75 with Silver.
+Additionally, I don't think some of it even makes sense in the store. How much money can Bungie possibly have made on ghost projections in the lifetime of Destiny 2? I think those would be better suited as free drops in the game so players feel that store is only for higher quality things. Most ships, sparrows, and ghosts would be better suited as drops in the game, with the more playful and fun ones as Eververse purchases since they are unique and don't really fit into any content. I think it makes perfect sense to buy emotes and silly beach themed cosmetics in the store, but it makes much less sense to be buying random hive themed sparrow #75 with Silver.
 
 Maybe that makes me a filthy casual, but I would love a system where the store is focused on ornaments and gear at reasonable enough prices that I am incentivized to purchase things. 
 ## Summary of a year of Destiny 3:
