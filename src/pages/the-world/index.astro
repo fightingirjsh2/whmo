@@ -1,0 +1,58 @@
+---
+import Base from "../../layouts/Base.astro";
+import FeedCard from "../../components/FeedCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("the-world", ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const slug = (id: string) => id.replace(/^.*\//, "").replace(/\.md$/, "");
+const [lead, second, ...rest] = posts;
+---
+
+<Base title="The World" description="All world coverage from Wait, Hear Me Out...">
+  <div class="container">
+    <section data-feed="the-world">
+      {lead && (
+        <div class="article-grid article-grid--lead">
+          <FeedCard
+            title={lead.data.title}
+            description={lead.data.description}
+            date={lead.data.date}
+            author={lead.data.author}
+            slug={slug(lead.id)}
+            collection="the-world"
+            variant="lead"
+          />
+          {second && (
+            <FeedCard
+              title={second.data.title}
+              description={second.data.description}
+              date={second.data.date}
+              author={second.data.author}
+              slug={slug(second.id)}
+              collection="the-world"
+              variant="secondary"
+            />
+          )}
+        </div>
+      )}
+      {rest.length > 0 && (
+        <div class="article-grid article-grid--secondary">
+          {rest.map((post) => (
+            <FeedCard
+              title={post.data.title}
+              description={post.data.description}
+              date={post.data.date}
+              author={post.data.author}
+              slug={slug(post.id)}
+              collection="the-world"
+              variant="secondary"
+            />
+          ))}
+        </div>
+      )}
+    </section>
+  </div>
+</Base>

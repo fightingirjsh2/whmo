@@ -3,15 +3,21 @@ import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const [gaming, events, sports] = await Promise.all([
+  const [destiny, gaming, tvMovies, theWorld, politics, sports] = await Promise.all([
+    getCollection("destiny", ({ data }) => !data.draft),
     getCollection("gaming", ({ data }) => !data.draft),
-    getCollection("current-events", ({ data }) => !data.draft),
+    getCollection("tv-movies", ({ data }) => !data.draft),
+    getCollection("the-world", ({ data }) => !data.draft),
+    getCollection("politics", ({ data }) => !data.draft),
     getCollection("sports", ({ data }) => !data.draft),
   ]);
 
   const allPosts = [
+    ...destiny.map((p) => ({ ...p, collection: "destiny" as const })),
     ...gaming.map((p) => ({ ...p, collection: "gaming" as const })),
-    ...events.map((p) => ({ ...p, collection: "current-events" as const })),
+    ...tvMovies.map((p) => ({ ...p, collection: "tv-movies" as const })),
+    ...theWorld.map((p) => ({ ...p, collection: "the-world" as const })),
+    ...politics.map((p) => ({ ...p, collection: "politics" as const })),
     ...sports.map((p) => ({ ...p, collection: "sports" as const })),
   ];
 
@@ -30,7 +36,6 @@ export async function getStaticPaths() {
     params: { tag },
     props: {
       tag,
-      // Use the display casing from the first occurrence
       displayTag: posts[0].data.tags.find(
         (t) => normalize(t) === tag
       ) ?? tag,
@@ -42,14 +47,20 @@ export async function getStaticPaths() {
 const { tag, displayTag, posts } = Astro.props;
 
 const collectionLabels: Record<string, string> = {
+  destiny: "Destiny",
   gaming: "Gaming & Hobbies",
-  "current-events": "Current Events",
+  "tv-movies": "TV & Movies",
+  "the-world": "The World",
+  politics: "Politics",
   sports: "Sports",
 };
 
 const collectionAccent: Record<string, string> = {
+  destiny: "var(--destiny)",
   gaming: "var(--gaming)",
-  "current-events": "var(--events)",
+  "tv-movies": "var(--tv-movies)",
+  "the-world": "var(--the-world)",
+  politics: "var(--politics)",
   sports: "var(--sports)",
 };
 ---

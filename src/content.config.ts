@@ -12,12 +12,24 @@ const postSchema = z.object({
 });
 
 export const collections = {
+  destiny: defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/destiny" }),
+    schema: postSchema,
+  }),
   gaming: defineCollection({
     loader: glob({ pattern: "**/*.md", base: "./src/content/gaming" }),
     schema: postSchema,
   }),
-  "current-events": defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/current-events" }),
+  "tv-movies": defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/tv-movies" }),
+    schema: postSchema,
+  }),
+  "the-world": defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/the-world" }),
+    schema: postSchema,
+  }),
+  politics: defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/politics" }),
     schema: postSchema,
   }),
   sports: defineCollection({

@@ -12,8 +12,11 @@
   --accent: #c0392b;
   --muted: #6b6560;
   --rule: #d9d3c8;
+  --destiny: #ea580c;
   --gaming: #7c3aed;
-  --events: #c0392b;
+  --tv-movies: #0d9488;
+  --the-world: #1e3a8a;
+  --politics: #ca8a04;
   --sports: #1e6b3a;
 
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -28,8 +31,11 @@
   --paper: #141210;
   --muted: #8a8480;
   --rule: #2a2824;
+  --destiny: #fb923c;
   --gaming: #a78bfa;
-  --events: #e05c4e;
+  --tv-movies: #2dd4bf;
+  --the-world: #60a5fa;
+  --politics: #fbbf24;
   --sports: #4ade80;
 }
 
@@ -195,50 +201,80 @@ h1, h2, h3, h4 {
 .feed-nav__link:hover { color: var(--ink); }
 
 .feed-nav__link[data-active="true"] { color: var(--ink); }
+.feed-nav__link[data-active="true"][data-feed="destiny"] { border-color: var(--destiny); }
 .feed-nav__link[data-active="true"][data-feed="gaming"] { border-color: var(--gaming); }
-.feed-nav__link[data-active="true"][data-feed="current-events"] { border-color: var(--events); }
+.feed-nav__link[data-active="true"][data-feed="tv-movies"] { border-color: var(--tv-movies); }
+.feed-nav__link[data-active="true"][data-feed="the-world"] { border-color: var(--the-world); }
+.feed-nav__link[data-active="true"][data-feed="politics"] { border-color: var(--politics); }
 .feed-nav__link[data-active="true"][data-feed="sports"] { border-color: var(--sports); }
 
-/* Splash / welcome page */
+/* Splash / welcome page - Expanding vertical stripes */
 .splash {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   min-height: calc(100vh - 72px);
+  overflow: hidden;
 }
 
 .splash__section {
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2.5rem 2rem;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
   border-right: 1px solid var(--rule);
   border-top: 4px solid transparent;
-  text-decoration: none;
   color: var(--ink);
-  transition: background 0.2s, border-color 0.2s;
-  position: relative;
+  transition: flex 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.35s,
+              border-color 0.2s;
+  cursor: pointer;
 }
 
 .splash__section:last-child { border-right: none; }
 
 .splash__section:hover {
-  background: color-mix(in srgb, var(--accent) 6%, var(--paper));
+  flex: 3.5;
+  background: color-mix(in srgb, var(--accent) 8%, var(--paper));
   border-top-color: var(--accent);
 }
 
-.splash__section:hover .splash__title {
+.splash__vert-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-serif);
+  font-weight: 900;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
   color: var(--accent);
+  white-space: nowrap;
+  transition: opacity 0.15s;
+  user-select: none;
+  pointer-events: none;
 }
 
-.splash__section:hover .splash__cta {
-  color: var(--accent);
-  gap: 0.6rem;
+.splash__section:hover .splash__vert-title {
+  opacity: 0;
 }
 
 .splash__inner {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 0.75rem;
+  padding: 2.5rem 2rem;
+  opacity: 0;
+  transition: opacity 0.25s 0.2s;
+  pointer-events: none;
+}
+
+.splash__section:hover .splash__inner {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .splash__count {
@@ -248,11 +284,15 @@ h1, h2, h3, h4 {
 .splash__title {
   font-family: var(--font-serif);
   font-weight: 900;
-  font-size: clamp(2.25rem, 4vw, 3.75rem);
+  font-size: clamp(1.75rem, 3vw, 3rem);
   line-height: 1.05;
   letter-spacing: -0.03em;
   white-space: pre-line;
   transition: color 0.2s;
+}
+
+.splash__section:hover .splash__title {
+  color: var(--accent);
 }
 
 .splash__tagline {
@@ -262,27 +302,29 @@ h1, h2, h3, h4 {
   max-width: 26ch;
 }
 
-.splash__latest {
-  font-size: 0.875rem;
-  color: var(--muted);
-  line-height: 1.45;
+.splash__articles {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
   padding-top: 0.5rem;
   border-top: 1px solid var(--rule);
+}
+
+.splash__article-link {
+  font-size: 0.875rem;
+  line-height: 1.35;
+  color: var(--muted);
+  text-decoration: none;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: color 0.15s;
 }
 
-.splash__latest-label {
-  display: inline-block;
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-right: 0.4rem;
-  vertical-align: middle;
+.splash__article-link:hover {
+  color: var(--accent);
 }
 
 .splash__cta {
@@ -294,17 +336,26 @@ h1, h2, h3, h4 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   transition: color 0.2s, gap 0.2s;
+  text-decoration: none;
+}
+
+.splash__cta:hover {
+  color: var(--accent);
+  gap: 0.6rem;
 }
 
 @media (max-width: 767px) {
   .splash {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     min-height: auto;
   }
 
   .splash__section {
+    flex: none;
+    align-items: flex-start;
+    justify-content: flex-start;
     border-right: none;
     border-top: 1px solid var(--rule);
     border-left: 4px solid transparent;
@@ -312,11 +363,23 @@ h1, h2, h3, h4 {
   }
 
   .splash__section:hover {
+    flex: none;
     border-top-color: var(--rule);
     border-left-color: var(--accent);
   }
 
-  .splash__title { font-size: clamp(2rem, 10vw, 3rem); white-space: normal; }
+  .splash__vert-title { display: none; }
+
+  .splash__inner {
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0;
+    gap: 0.5rem;
+    transition: none;
+  }
+
+  .splash__title { font-size: clamp(1.75rem, 8vw, 2.5rem); white-space: normal; }
 }
 
 /* Tabs */
@@ -363,8 +426,11 @@ h1, h2, h3, h4 {
   color: var(--ink);
 }
 
+.tabs__btn[data-active="true"][data-feed="destiny"] { border-color: var(--destiny); }
 .tabs__btn[data-active="true"][data-feed="gaming"] { border-color: var(--gaming); }
-.tabs__btn[data-active="true"][data-feed="current-events"] { border-color: var(--events); }
+.tabs__btn[data-active="true"][data-feed="tv-movies"] { border-color: var(--tv-movies); }
+.tabs__btn[data-active="true"][data-feed="the-world"] { border-color: var(--the-world); }
+.tabs__btn[data-active="true"][data-feed="politics"] { border-color: var(--politics); }
 .tabs__btn[data-active="true"][data-feed="sports"] { border-color: var(--sports); }
 
 /* Feed panels */
@@ -461,8 +527,11 @@ h1, h2, h3, h4 {
 }
 
 /* Tag accent colors */
+[data-feed="destiny"] .card__kicker { color: var(--destiny); }
 [data-feed="gaming"] .card__kicker { color: var(--gaming); }
-[data-feed="current-events"] .card__kicker { color: var(--events); }
+[data-feed="tv-movies"] .card__kicker { color: var(--tv-movies); }
+[data-feed="the-world"] .card__kicker { color: var(--the-world); }
+[data-feed="politics"] .card__kicker { color: var(--politics); }
 [data-feed="sports"] .card__kicker { color: var(--sports); }
 
 /* Article page */
@@ -517,14 +586,29 @@ h1, h2, h3, h4 {
   opacity: 0.7;
 }
 
+.article[data-section="destiny"] .article__body a {
+  color: var(--destiny);
+  text-decoration-color: var(--destiny);
+}
+
 .article[data-section="gaming"] .article__body a {
   color: var(--gaming);
   text-decoration-color: var(--gaming);
 }
 
-.article[data-section="current-events"] .article__body a {
-  color: var(--events);
-  text-decoration-color: var(--events);
+.article[data-section="tv-movies"] .article__body a {
+  color: var(--tv-movies);
+  text-decoration-color: var(--tv-movies);
+}
+
+.article[data-section="the-world"] .article__body a {
+  color: var(--the-world);
+  text-decoration-color: var(--the-world);
+}
+
+.article[data-section="politics"] .article__body a {
+  color: var(--politics);
+  text-decoration-color: var(--politics);
 }
 
 .article[data-section="sports"] .article__body a {

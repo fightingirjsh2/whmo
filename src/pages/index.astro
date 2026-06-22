@@ -2,19 +2,35 @@
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
-const [gaming, events, sports] = await Promise.all([
+const [destiny, gaming, tvMovies, theWorld, politics, sports] = await Promise.all([
+  getCollection("destiny", ({ data }) => !data.draft),
   getCollection("gaming", ({ data }) => !data.draft),
-  getCollection("current-events", ({ data }) => !data.draft),
+  getCollection("tv-movies", ({ data }) => !data.draft),
+  getCollection("the-world", ({ data }) => !data.draft),
+  getCollection("politics", ({ data }) => !data.draft),
   getCollection("sports", ({ data }) => !data.draft),
 ]);
 
 const recents = (posts: typeof gaming, n = 3) =>
   [...posts].sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, n);
 
+const slug = (id: string) => id.replace(/^.*\//, "").replace(/\.md$/, "");
+
 const feeds = [
+  {
+    id: "destiny",
+    label: "Destiny",
+    shortLabel: "Destiny",
+    href: "/destiny",
+    accentVar: "--destiny",
+    recents: recents(destiny),
+    count: destiny.length,
+    tagline: "Bungie, Destiny, and the universe they built.",
+  },
   {
     id: "gaming",
     label: "Gaming\n& Hobbies",
+    shortLabel: "Gaming",
     href: "/gaming",
     accentVar: "--gaming",
     recents: recents(gaming),
@@ -22,17 +38,39 @@ const feeds = [
     tagline: "Reviews, previews, and takes on games and the hobby space.",
   },
   {
-    id: "current-events",
-    label: "Current\nEvents",
-    href: "/current-events",
-    accentVar: "--events",
-    recents: recents(events),
-    count: events.length,
-    tagline: "News, policy, and the stories worth slowing down for.",
+    id: "tv-movies",
+    label: "TV &\nMovies",
+    shortLabel: "TV & Movies",
+    href: "/tv-movies",
+    accentVar: "--tv-movies",
+    recents: recents(tvMovies),
+    count: tvMovies.length,
+    tagline: "The shows and films worth your time.",
+  },
+  {
+    id: "the-world",
+    label: "The\nWorld",
+    shortLabel: "The World",
+    href: "/the-world",
+    accentVar: "--the-world",
+    recents: recents(theWorld),
+    count: theWorld.length,
+    tagline: "News and stories worth slowing down for.",
+  },
+  {
+    id: "politics",
+    label: "Politics",
+    shortLabel: "Politics",
+    href: "/politics",
+    accentVar: "--politics",
+    recents: recents(politics),
+    count: politics.length,
+    tagline: "Policy, power, and the people affected.",
   },
   {
     id: "sports",
     label: "Sports",
+    shortLabel: "Sports",
     href: "/sports",
     accentVar: "--sports",
     recents: recents(sports),
@@ -46,6 +84,7 @@ const feeds = [
   <div class="splash">
     {feeds.map((feed) => (
       <div class="splash__section" data-feed={feed.id} style={`--accent: var(${feed.accentVar})`}>
+        <span class="splash__vert-title" aria-hidden="true">{feed.shortLabel}</span>
         <div class="splash__inner">
           <p class="splash__count kicker">{feed.count} {feed.count === 1 ? "article" : "articles"}</p>
           <h2 class="splash__title">
@@ -54,16 +93,13 @@ const feeds = [
           <p class="splash__tagline">{feed.tagline}</p>
           {feed.recents.length > 0 && (
             <ul class="splash__articles">
-              {feed.recents.map((article) => {
-                const slug = article.id.replace(/\.md$/, "");
-                return (
-                  <li>
-                    <a class="splash__article-link" href={`${feed.href}/${slug}`}>
-                      {article.data.title}
-                    </a>
-                  </li>
-                );
-              })}
+              {feed.recents.map((article) => (
+                <li>
+                  <a class="splash__article-link" href={`${feed.href}/${slug(article.id)}`}>
+                    {article.data.title}
+                  </a>
+                </li>
+              ))}
             </ul>
           )}
           <a class="splash__cta" href={feed.href}>Read all &#8594;</a>
