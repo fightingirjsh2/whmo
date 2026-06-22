@@ -12,11 +12,10 @@
   --accent: #c0392b;
   --muted: #6b6560;
   --rule: #d9d3c8;
-  --destiny: #ea580c;
+  --destiny: #1d4ed8;
   --gaming: #7c3aed;
-  --tv-movies: #0d9488;
-  --the-world: #1e3a8a;
-  --politics: #ca8a04;
+  --tv-movies: #dc2626;
+  --world-politics: #ca8a04;
   --sports: #1e6b3a;
 
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -31,11 +30,10 @@
   --paper: #141210;
   --muted: #8a8480;
   --rule: #2a2824;
-  --destiny: #fb923c;
+  --destiny: #93c5fd;
   --gaming: #a78bfa;
-  --tv-movies: #2dd4bf;
-  --the-world: #60a5fa;
-  --politics: #fbbf24;
+  --tv-movies: #f87171;
+  --world-politics: #fbbf24;
   --sports: #4ade80;
 }
 
@@ -204,8 +202,7 @@ h1, h2, h3, h4 {
 .feed-nav__link[data-active="true"][data-feed="destiny"] { border-color: var(--destiny); }
 .feed-nav__link[data-active="true"][data-feed="gaming"] { border-color: var(--gaming); }
 .feed-nav__link[data-active="true"][data-feed="tv-movies"] { border-color: var(--tv-movies); }
-.feed-nav__link[data-active="true"][data-feed="the-world"] { border-color: var(--the-world); }
-.feed-nav__link[data-active="true"][data-feed="politics"] { border-color: var(--politics); }
+.feed-nav__link[data-active="true"][data-feed="world-politics"] { border-color: var(--world-politics); }
 .feed-nav__link[data-active="true"][data-feed="sports"] { border-color: var(--sports); }
 
 /* Splash / welcome page - Expanding vertical stripes */
@@ -244,10 +241,13 @@ h1, h2, h3, h4 {
 .splash__vert-title {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  position: absolute;
+  top: 1.25rem;
+  right: 0.75rem;
   font-family: var(--font-serif);
   font-weight: 900;
-  font-size: 0.95rem;
-  letter-spacing: 0.08em;
+  font-size: 1.75rem;
+  letter-spacing: 0.06em;
   color: var(--accent);
   white-space: nowrap;
   transition: opacity 0.15s;
@@ -382,6 +382,128 @@ h1, h2, h3, h4 {
   .splash__title { font-size: clamp(1.75rem, 8vw, 2.5rem); white-space: normal; }
 }
 
+/* Category panel background images */
+.splash__section[data-feed="destiny"] {
+  background-image:
+    linear-gradient(rgba(29, 78, 216, 0.75), rgba(29, 78, 216, 0.75)),
+    url('/images/MOT_Key_Art_1920x1080.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.splash__section[data-feed="destiny"]:hover {
+  background-image:
+    linear-gradient(rgba(29, 78, 216, 0.55), rgba(29, 78, 216, 0.55)),
+    url('/images/MOT_Key_Art_1920x1080.jpg');
+}
+
+.splash__section[data-feed="gaming"] {
+  background-image:
+    linear-gradient(rgba(124, 58, 237, 0.75), rgba(124, 58, 237, 0.75)),
+    url('/images/deathloop.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.splash__section[data-feed="gaming"]:hover {
+  background-image:
+    linear-gradient(rgba(124, 58, 237, 0.55), rgba(124, 58, 237, 0.55)),
+    url('/images/deathloop.jpeg');
+}
+
+.splash__section[data-feed="tv-movies"] {
+  background-image:
+    linear-gradient(rgba(220, 38, 38, 0.75), rgba(220, 38, 38, 0.75)),
+    url('/images/silo_keyart.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.splash__section[data-feed="tv-movies"]:hover {
+  background-image:
+    linear-gradient(rgba(220, 38, 38, 0.55), rgba(220, 38, 38, 0.55)),
+    url('/images/silo_keyart.jpg');
+}
+
+.splash__section[data-feed="world-politics"] {
+  background-image:
+    linear-gradient(rgba(202, 138, 4, 0.75), rgba(202, 138, 4, 0.75)),
+    url('/images/whitehouse.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.splash__section[data-feed="world-politics"]:hover {
+  background-image:
+    linear-gradient(rgba(202, 138, 4, 0.55), rgba(202, 138, 4, 0.55)),
+    url('/images/whitehouse.jpg');
+}
+
+.splash__section[data-feed="sports"] {
+  background-image:
+    linear-gradient(rgba(30, 107, 58, 0.75), rgba(30, 107, 58, 0.75)),
+    url('/images/nfl_image1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.splash__section[data-feed="sports"]:hover {
+  background-image:
+    linear-gradient(rgba(30, 107, 58, 0.55), rgba(30, 107, 58, 0.55)),
+    url('/images/nfl_image1.jpg');
+}
+
+/* White text for all image-backed panels */
+.splash__section[data-feed="destiny"] .splash__vert-title,
+.splash__section[data-feed="gaming"] .splash__vert-title,
+.splash__section[data-feed="tv-movies"] .splash__vert-title,
+.splash__section[data-feed="world-politics"] .splash__vert-title,
+.splash__section[data-feed="sports"] .splash__vert-title {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.splash__section[data-feed="destiny"] .splash__count,
+.splash__section[data-feed="destiny"] .splash__tagline,
+.splash__section[data-feed="destiny"] .splash__article-link,
+.splash__section[data-feed="gaming"] .splash__count,
+.splash__section[data-feed="gaming"] .splash__tagline,
+.splash__section[data-feed="gaming"] .splash__article-link,
+.splash__section[data-feed="tv-movies"] .splash__count,
+.splash__section[data-feed="tv-movies"] .splash__tagline,
+.splash__section[data-feed="tv-movies"] .splash__article-link,
+.splash__section[data-feed="world-politics"] .splash__count,
+.splash__section[data-feed="world-politics"] .splash__tagline,
+.splash__section[data-feed="world-politics"] .splash__article-link,
+.splash__section[data-feed="sports"] .splash__count,
+.splash__section[data-feed="sports"] .splash__tagline,
+.splash__section[data-feed="sports"] .splash__article-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.splash__section[data-feed="destiny"] .splash__title,
+.splash__section[data-feed="destiny"]:hover .splash__title,
+.splash__section[data-feed="gaming"] .splash__title,
+.splash__section[data-feed="gaming"]:hover .splash__title,
+.splash__section[data-feed="tv-movies"] .splash__title,
+.splash__section[data-feed="tv-movies"]:hover .splash__title,
+.splash__section[data-feed="world-politics"] .splash__title,
+.splash__section[data-feed="world-politics"]:hover .splash__title,
+.splash__section[data-feed="sports"] .splash__title,
+.splash__section[data-feed="sports"]:hover .splash__title {
+  color: white;
+}
+
+.splash__section[data-feed="destiny"] .splash__cta,
+.splash__section[data-feed="gaming"] .splash__cta,
+.splash__section[data-feed="tv-movies"] .splash__cta,
+.splash__section[data-feed="world-politics"] .splash__cta,
+.splash__section[data-feed="sports"] .splash__cta {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.splash__section[data-feed="destiny"] .splash__articles,
+.splash__section[data-feed="gaming"] .splash__articles,
+.splash__section[data-feed="tv-movies"] .splash__articles,
+.splash__section[data-feed="world-politics"] .splash__articles,
+.splash__section[data-feed="sports"] .splash__articles {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+
 /* Tabs */
 .tabs {
   border-bottom: 1px solid var(--rule);
@@ -429,8 +551,7 @@ h1, h2, h3, h4 {
 .tabs__btn[data-active="true"][data-feed="destiny"] { border-color: var(--destiny); }
 .tabs__btn[data-active="true"][data-feed="gaming"] { border-color: var(--gaming); }
 .tabs__btn[data-active="true"][data-feed="tv-movies"] { border-color: var(--tv-movies); }
-.tabs__btn[data-active="true"][data-feed="the-world"] { border-color: var(--the-world); }
-.tabs__btn[data-active="true"][data-feed="politics"] { border-color: var(--politics); }
+.tabs__btn[data-active="true"][data-feed="world-politics"] { border-color: var(--world-politics); }
 .tabs__btn[data-active="true"][data-feed="sports"] { border-color: var(--sports); }
 
 /* Feed panels */
@@ -530,8 +651,7 @@ h1, h2, h3, h4 {
 [data-feed="destiny"] .card__kicker { color: var(--destiny); }
 [data-feed="gaming"] .card__kicker { color: var(--gaming); }
 [data-feed="tv-movies"] .card__kicker { color: var(--tv-movies); }
-[data-feed="the-world"] .card__kicker { color: var(--the-world); }
-[data-feed="politics"] .card__kicker { color: var(--politics); }
+[data-feed="world-politics"] .card__kicker { color: var(--world-politics); }
 [data-feed="sports"] .card__kicker { color: var(--sports); }
 
 /* Article page */
@@ -601,14 +721,9 @@ h1, h2, h3, h4 {
   text-decoration-color: var(--tv-movies);
 }
 
-.article[data-section="the-world"] .article__body a {
-  color: var(--the-world);
-  text-decoration-color: var(--the-world);
-}
-
-.article[data-section="politics"] .article__body a {
-  color: var(--politics);
-  text-decoration-color: var(--politics);
+.article[data-section="world-politics"] .article__body a {
+  color: var(--world-politics);
+  text-decoration-color: var(--world-politics);
 }
 
 .article[data-section="sports"] .article__body a {

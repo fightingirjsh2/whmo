@@ -24,12 +24,8 @@ export const collections = {
     loader: glob({ pattern: "**/*.md", base: "./src/content/tv-movies" }),
     schema: postSchema,
   }),
-  "the-world": defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/the-world" }),
-    schema: postSchema,
-  }),
-  politics: defineCollection({
-    loader: glob({ pattern: "**/*.md", base: "./src/content/politics" }),
+  "world-politics": defineCollection({
+    loader: glob({ pattern: "**/*.md", base: "./src/content/world-politics" }),
     schema: postSchema,
   }),
   sports: defineCollection({

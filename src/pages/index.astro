@@ -2,12 +2,11 @@
 import Base from "../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
-const [destiny, gaming, tvMovies, theWorld, politics, sports] = await Promise.all([
+const [destiny, gaming, tvMovies, worldPolitics, sports] = await Promise.all([
   getCollection("destiny", ({ data }) => !data.draft),
   getCollection("gaming", ({ data }) => !data.draft),
   getCollection("tv-movies", ({ data }) => !data.draft),
-  getCollection("the-world", ({ data }) => !data.draft),
-  getCollection("politics", ({ data }) => !data.draft),
+  getCollection("world-politics", ({ data }) => !data.draft),
   getCollection("sports", ({ data }) => !data.draft),
 ]);
 
@@ -29,7 +28,7 @@ const feeds = [
   },
   {
     id: "gaming",
-    label: "Gaming\n& Hobbies",
+    label: "Gaming &\nThe Industry",
     shortLabel: "Gaming",
     href: "/gaming",
     accentVar: "--gaming",
@@ -48,24 +47,14 @@ const feeds = [
     tagline: "The shows and films worth your time.",
   },
   {
-    id: "the-world",
-    label: "The\nWorld",
-    shortLabel: "The World",
-    href: "/the-world",
-    accentVar: "--the-world",
-    recents: recents(theWorld),
-    count: theWorld.length,
-    tagline: "News and stories worth slowing down for.",
-  },
-  {
-    id: "politics",
-    label: "Politics",
-    shortLabel: "Politics",
-    href: "/politics",
-    accentVar: "--politics",
-    recents: recents(politics),
-    count: politics.length,
-    tagline: "Policy, power, and the people affected.",
+    id: "world-politics",
+    label: "World &\nPolitics",
+    shortLabel: "World & Politics",
+    href: "/world-politics",
+    accentVar: "--world-politics",
+    recents: recents(worldPolitics),
+    count: worldPolitics.length,
+    tagline: "News, policy, and the stories worth slowing down for.",
   },
   {
     id: "sports",

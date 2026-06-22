@@ -3,7 +3,7 @@ import ArticlePage from "../../layouts/ArticlePage.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("the-world", ({ data }) => !data.draft);
+  const posts = await getCollection("world-politics", ({ data }) => !data.draft);
   return posts.map((post) => ({
     params: { slug: post.id.replace(/^.*\//, "").replace(/\.md$/, "") },
     props: { post },
@@ -22,11 +22,11 @@ const { Content } = await render(post);
   image={post.data.image}
   tags={post.data.tags}
   currentId={post.id}
-  collection="the-world"
-  backHref="/the-world"
-  backLabel="The World"
-  accentVar="--the-world"
-  feedLabel="The World"
+  collection="world-politics"
+  backHref="/world-politics"
+  backLabel="World & Politics"
+  accentVar="--world-politics"
+  feedLabel="World & Politics"
 >
   <Content />
 </ArticlePage>

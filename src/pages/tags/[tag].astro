@@ -3,12 +3,11 @@ import Base from "../../layouts/Base.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const [destiny, gaming, tvMovies, theWorld, politics, sports] = await Promise.all([
+  const [destiny, gaming, tvMovies, worldPolitics, sports] = await Promise.all([
     getCollection("destiny", ({ data }) => !data.draft),
     getCollection("gaming", ({ data }) => !data.draft),
     getCollection("tv-movies", ({ data }) => !data.draft),
-    getCollection("the-world", ({ data }) => !data.draft),
-    getCollection("politics", ({ data }) => !data.draft),
+    getCollection("world-politics", ({ data }) => !data.draft),
     getCollection("sports", ({ data }) => !data.draft),
   ]);
 
@@ -16,8 +15,7 @@ export async function getStaticPaths() {
     ...destiny.map((p) => ({ ...p, collection: "destiny" as const })),
     ...gaming.map((p) => ({ ...p, collection: "gaming" as const })),
     ...tvMovies.map((p) => ({ ...p, collection: "tv-movies" as const })),
-    ...theWorld.map((p) => ({ ...p, collection: "the-world" as const })),
-    ...politics.map((p) => ({ ...p, collection: "politics" as const })),
+    ...worldPolitics.map((p) => ({ ...p, collection: "world-politics" as const })),
     ...sports.map((p) => ({ ...p, collection: "sports" as const })),
   ];
 
@@ -50,8 +48,7 @@ const collectionLabels: Record<string, string> = {
   destiny: "Destiny",
   gaming: "Gaming & Hobbies",
   "tv-movies": "TV & Movies",
-  "the-world": "The World",
-  politics: "Politics",
+  "world-politics": "World & Politics",
   sports: "Sports",
 };
 
@@ -59,8 +56,7 @@ const collectionAccent: Record<string, string> = {
   destiny: "var(--destiny)",
   gaming: "var(--gaming)",
   "tv-movies": "var(--tv-movies)",
-  "the-world": "var(--the-world)",
-  politics: "var(--politics)",
+  "world-politics": "var(--world-politics)",
   sports: "var(--sports)",
 };
 ---
