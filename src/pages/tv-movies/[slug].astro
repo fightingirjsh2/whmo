@@ -3,7 +3,7 @@ import ArticlePage from "../../layouts/ArticlePage.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("gaming", ({ data }) => !data.draft);
+  const posts = await getCollection("tv-movies", ({ data }) => !data.draft);
   return posts.map((post) => ({
     params: { slug: post.id.replace(/^.*\//, "").replace(/\.md$/, "") },
     props: { post },
@@ -22,11 +22,11 @@ const { Content } = await render(post);
   image={post.data.image}
   tags={post.data.tags}
   currentId={post.id}
-  collection="gaming"
-  backHref="/gaming"
-  backLabel="Gaming & The Industry"
-  accentVar="--gaming"
-  feedLabel="Gaming & The Industry"
+  collection="tv-movies"
+  backHref="/tv-movies"
+  backLabel="TV & Movies"
+  accentVar="--tv-movies"
+  feedLabel="TV & Movies"
 >
   <Content />
 </ArticlePage>

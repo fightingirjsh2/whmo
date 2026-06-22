@@ -3,7 +3,7 @@ import Base from "../../layouts/Base.astro";
 import FeedCard from "../../components/FeedCard.astro";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("gaming", ({ data }) => !data.draft)).sort(
+const posts = (await getCollection("world-politics", ({ data }) => !data.draft)).sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
 
@@ -11,9 +11,9 @@ const slug = (id: string) => id.replace(/^.*\//, "").replace(/\.md$/, "");
 const [lead, second, ...rest] = posts;
 ---
 
-<Base title="Gaming & The Industry" description="All gaming and hobby coverage from Wait, Hear Me Out...">
+<Base title="World & Politics" description="All world and politics coverage from Wait, Hear Me Out...">
   <div class="container">
-    <section data-feed="gaming">
+    <section data-feed="world-politics">
       {lead && (
         <div class="article-grid article-grid--lead">
           <FeedCard
@@ -22,7 +22,7 @@ const [lead, second, ...rest] = posts;
             date={lead.data.date}
             author={lead.data.author}
             slug={slug(lead.id)}
-            collection="gaming"
+            collection="world-politics"
             variant="lead"
           />
           {second && (
@@ -32,7 +32,7 @@ const [lead, second, ...rest] = posts;
               date={second.data.date}
               author={second.data.author}
               slug={slug(second.id)}
-              collection="gaming"
+              collection="world-politics"
               variant="secondary"
             />
           )}
@@ -47,7 +47,7 @@ const [lead, second, ...rest] = posts;
               date={post.data.date}
               author={post.data.author}
               slug={slug(post.id)}
-              collection="gaming"
+              collection="world-politics"
               variant="secondary"
             />
           ))}
