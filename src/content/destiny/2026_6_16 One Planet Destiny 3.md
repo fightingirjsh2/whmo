@@ -8,7 +8,7 @@ tags:
   - Bungie
   - Opinion
 draft: false
-image: /images/tinyD3/xivu_arath_concept.jpeg
+image: /images/D2_final_keyart
 ---
 Destiny 3 is going to be too expensive and take too long, so it's not being made.
 
